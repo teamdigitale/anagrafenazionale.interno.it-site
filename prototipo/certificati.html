@@ -1,0 +1,709 @@
+<!doctype html>
+<html lang="it">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap icons -->
+    <link href="css/bootstrap-icons.css" rel="stylesheet" />
+    <!-- CSS del tema -->
+    <link href="css/italia.css" rel="stylesheet" />
+    <!-- CSS del carousel -->
+    <link href="css/splide.min.css" rel="stylesheet" />
+    <!-- CSS custom -->
+    <link href="css/custom.css" rel="stylesheet" />
+
+    <title>Certificati / Anagrafe Nazionale</title>
+</head>
+
+<body>
+    <a class="visually-hidden" href="#main" aria-label="link a contenuto principale">Vai al contenuto principale</a>
+    <header aria-label="Funzioni di servizio">
+        <div class="header-top-light">
+            <div class="container px-custom py-2">
+                <div class="row align-items-center gx-2 gx-md-4">
+                    <div class="col">
+                        <a href="https://www.interno.gov.it/it" target="_blank" class="link-primary fw-semibold">Ministero dell'Interno<span class="visually-hidden">: apre una nuova finestra</span></a>
+                    </div>
+                    <div class="col col-md-auto d-flex align-items-center justify-content-end">
+                        <div class="dropdown">
+                            <button type="button" id="lingue-disponibili" class="btn btn-sm link-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="visually-hidden">Lingue disponibili:</span>ITA
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="lingue-disponibili">
+                                <li>
+                                    <a class="dropdown-item" href="#" lang="de">DEU<span class="visually-hidden">: deutsche</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#" lang="en">ENG<span class="visually-hidden">: english</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#" lang="sl">SLO<span class="visually-hidden">: slovenian</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <button type="button" class="btn btn-primary btn-sm access ms-3">
+                            <span class="rounded-icon d-none d-md-flex"><i class="icon bi bi-person-fill"></i></span> Accedi <span class="d-none d-md-inline ms-1">AI SERVIZI</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-light">
+            <div class="container px-custom pt-3 py-md-4">
+                <div class="d-flex align-items-center gx-2 gx-md-4">
+                    
+                        <!--<button type="button" class="navbar-toggler me-3" data-bs-toggle="collapse" href="#navbar-menu" role="button" aria-expanded="false" aria-controls="navbar-menu">
+                            <span class="visually-hidden">Apri menu principale</span>
+                            <i class="bi bi-list bi-lg"></i>
+                        </button>-->
+
+                        <button type="button" class="navbar-toggler me-3" data-bs-toggle="offcanvas" data-bs-target="#navbar-menu" aria-controls="navbar-menu" aria-label="Apri menu principale">
+                            <span class="visually-hidden">Apri menu principale</span>
+                            <i class="bi bi-list bi-lg"></i>
+                        </button>
+                    
+                        <img src="img/logo-anpr.svg" alt="Logo Anagrafe Nazionale" class="logo me-2 me-lg-4" />
+                   
+                        <h1>Anagrafe Nazionale<small>Unica. <span class="fw-bold">Per tutti.</span></small></h1>
+                    
+                        <a class="d-md-none ms-auto" href="#"><i class="bi bi-search"></i></a>
+                    
+                    
+                    <div class="d-none d-md-block ms-auto">
+                        <form  class="navbar-form">
+                            <label for="search" class="visually-hidden">Cerca nel sito:</label>
+                            <div class="input-group input-group-lg">
+                                <input type="text" id="search" name="search" class="form-control border-primary" placeholder="Cerca nel sito" />
+                                <button type="submit" class="btn btn-primary">
+                                    <i class="bi bi-search"></i>
+                                    <span class="visually-hidden">Cerca</span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav class="main-nav" aria-label="Menu principale">
+        <div class="visually-hidden">Menu principale</div>
+        <div class="navbar navbar-expand-md navbar-light">
+            <div class="container px-custom">
+                <div class="d-flex align-items-center w-100">
+                    <button type="button" class="navbar-toggler sticky me-3" data-bs-toggle="offcanvas" data-bs-target="#navbar-menu" aria-controls="navbar-menu" aria-label="Apri menu principale">
+                        <span class="visually-hidden">Apri menu principale</span>
+                        <i class="bi bi-list bi-lg"></i>
+                    </button>
+                    <img src="img/logo-anpr-bianco.svg" alt="" class="logo me-2" />
+                    <div class="head-title-mobile">Anagrafe Nazionale<small>Unica. <span class="fw-bold">Per tutti.</span></small></div>
+                    <a class="search ms-auto" href="#"><i class="bi bi-search"></i></a>
+
+                    <div class="navbar-collapse collapse" id="navbar-menu">
+
+                        <button type="button" class="navbar-toggler btn-close" data-bs-dismiss="offcanvas" aria-label="Chiudi menu principale" data-bs-target="#navbar-menu">
+                            <span class="visually-hidden">Chiudi menu principale</span>
+                            <i class="bi bi-x"></i>
+                        </button>
+                        <div class="menu-wrapper d-flex flex-column flex-md-row px-3 px-md-0">
+                            <ul class="navbar-nav main-navbar">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Cos'è l'Anagrafe</a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a class="dropdown-item" href="#">La missione</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">I numeri</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Le notizie</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item fw-bold" href="#">Scopri Cos'è l'Anagrafe <i class="icon bi bi-arrow-right ms-2"></i></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown active">
+                                    <a class="nav-link dropdown-toggle active" href="#" data-bs-toggle="dropdown" aria-expanded="false">Servizi anagrafici</a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a class="dropdown-item" href="#">Visura e autocertificazioni</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item active" href="#">Certificati</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Rettifica dati</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Cambio di residenza</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Domicilio digitale</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item fw-bold" href="#">Scopri i Servizi anagrafici<i class="icon bi bi-arrow-right ms-2"></i></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Area tecnica</a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a class="dropdown-item" href="#">Accordi di fruizione</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Formazione</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Documentazione tecnica</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Tabelle di decodifica</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Archivio storico dei comuni</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Guida all'anagrafe</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item fw-bold" href="#">Scopri l'Area Tecnica<i class="icon bi bi-arrow-right ms-2"></i></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="navbar-nav ms-md-auto">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link question" href="#">
+                                        <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 80 80">
+                                            <path id="Icon_material-question-answer" data-name="Icon material-question-answer" d="M79,19H71V55H19v8a4.012,4.012,0,0,0,4,4H67L83,83V23A4.012,4.012,0,0,0,79,19ZM63,43V7a4.012,4.012,0,0,0-4-4H7A4.012,4.012,0,0,0,3,7V63L19,47H59A4.012,4.012,0,0,0,63,43Z" transform="translate(-3 -3)" />
+                                        </svg>Domande frequenti
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="access-container">
+                                <button type="button" class="btn btn-primary btn-sm access ms-md-3">
+                                    <span class="rounded-icon"><i class="icon bi bi-person-fill"></i></span> ACCEDI AI SERVIZI
+                                </button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main">
+        <section class="section section-breadcrumb">
+            <div class="container px-custom">
+                <div class="col-12">
+                    <nav style="--bs-breadcrumb-divider: '|';" aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item"><a href="#">Servizi anagrafici</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Certificati</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container px-custom">
+
+                <div class="row">
+                    <aside id="laterale" class="col-lg-3 d-none d-lg-block">
+                        <nav aria-label="Menu della sezione ...">
+                            <div class="sidebar-header">
+                                <h3 class="sidebar-title">Servizi anagrafici</h3>
+                                <button type="button" class="navbar-toggler collapsed d-block d-lg-none" data-bs-toggle="collapse" data-bs-target="#sidebar-menu" aria-controls="sidebar-menu" aria-expanded="false">
+                                    <span class="visually-hidden">Apri menu della sezione ...</span>
+                                    <i class="bi bi-list text-primary"></i>
+                                </button>
+                            </div>
+                            <div class="sidebar sidebar-expand-lg sidebar-light">
+                                <div class="sidebar-collapse collapse" id="sidebar-menu">
+                                    <ul class="nav">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Visura e autocertificazioni</a>
+                                        </li>
+                                        <li class="nav-item active">
+                                            <a class="nav-link active" href="#">Certificati</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Rettifica dati</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Cambio di residenza</a>
+                                        </li>
+                                         <li class="nav-item">
+                                            <a class="nav-link" href="#">Domicilio digitale</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </aside>
+
+                    <div class="col-12 col-lg-8 page-sections-container" tabindex="0">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="title-box page-title d-flex flex-column align-items-center align-items-md-start justify-content-center justify-content-md-start mb-5">
+                                    
+                                    <div class="d-flex align-items-center align-items-md-start w-100 mb-3 mb-md-0">
+                                        <img class="icon icon-heading" src="img/ico-certificati.svg" alt="Certificati">
+                                        <h2 class="mb-0 mb-md-3">Certificati</h2>
+                                    </div>
+
+                                    <div class="text-box d-flex flex-column">
+                                        <p>Il servizio che rende disponibili online <span class="fw-semibold">14 tipologie di certificati anagrafici</span>, in forma singola o contestuale.</p>
+                                    </div>
+                                    <!--<img class="icon icon-heading me-md-5" src="img/ico-certificati.svg" alt="Certificati">
+                                    <div class="title-box">
+                                        <h2 class="page-title">Certificati</h2>
+                                        <p>Il servizio che rende disponibili online <strong>14 tipologie di certificati anagrafici</strong>, in forma singola o contestuale.</p>
+                                    </div>-->
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12">
+                                <h3 class="mb-4">Che cosa sono</h3>
+                                
+                                <p>I certificati anagrafici sono atti ufficiali che ti consentono di dimostrare precisi requisiti relativi alla tua persona o al tuo stato. <br>È possibile richiedere 14 tipologie di certificati: </p>
+                                <ul>
+                                    <li>anagrafico di nascita;</li>
+                                    <li>anagrafico di matrimonio;</li>
+                                    <li>di cittadinanza;</li>
+                                    <li>di esistenza in vita;</li>
+                                    <li>di residenza;</li>
+                                    <li>di residenza AIRE;</li>
+                                    <li>di stato civile;</li>
+                                    <li>di stato di famiglia;</li>
+                                    <li>di stato di famiglia e di stato civile;</li>
+                                    <li>di residenza in convivenza;</li>
+                                    <li>di stato di famiglia AIRE;</li>
+                                    <li>di stato di famiglia con rapporti di parentela;</li>
+                                    <li>di stato libero;</li>
+                                    <li>anagrafico di unione civile;</li>
+                                    <li>di contratto di convivenza.</li>
+                                </ul>
+                                <p>Puoi richiedere i certificati singolarmente oppure in forma contestuale, cioè riunendo diverse tipologie di dati in un unico certificato.</p>
+
+                                 <h3 class="mb-4 mt-5">Quando servono</h3>
+                                 <p>Quando un ente o una terza persona te lo richiede: per esempio, una società sportiva, un avvocato in sede di separazione o divorzio, un notaio. Verifica sempre <strong>che il certificato sia davvero necessario</strong>: il più delle volte basta un’<a href="#">autocertificazione</a>.</p>
+
+                                 <h3 class="mb-4 mt-5">Come richiederli</h3>
+                                 <p>Dopo l’autenticazione, all’interno della tua area riservata puoi: </p>
+                                 <ul>
+                                    <li>selezionare la persona per la quale richiedi il certificato (per te o per un componente della tua famiglia anagrafica);</li>
+                                    <li>selezionare il tipo di certificato da richiedere;</li>
+                                    <li>specificare il motivo della richiesta;</li>
+                                    <li>scegliere la modalità di ricezione (via email, download o entrambe);</li>
+                                    <li>ottenere il certificato digitale.</li>
+                                </ul>
+                                <p>Prima dell’emissione definitiva del certificato, ti verrà presentata un’<strong>anteprima</strong> per verificare i dati riportati. Potrai scegliere di ricevere il certificato al tuo indirizzo di posta elettronica solo se precedentemente registrato e validato nella sezione “Profilo utente”. I recapiti registrati in questa sezione sono forniti al comune di competenza per eventuali necessità di comunicazione.</p>
+
+                                
+
+                                <h3 class="mb-4 mt-5">Accordion con chips</h3>
+                                <p>Il corso, erogato da Sogei in collaborazione con SNA, è destinato ad operatori anagrafici e si articola in 3 video lezioni fruibili singolarmente seguite da un seminario dedicato agli approfondimenti tematici.</p>
+                                <div class="accordion" id="accordion-example-chips">
+                                    <div class="accordion-item">
+                                        <h4 class="accordion-header" id="accordion-example-chips-heading-1">
+                                            <button class="accordion-button accordion-button-start" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-example-chips-collapse-1" aria-controls="accordion-example-chips-collapse-1">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tristique nisi ultricies velit tristique auctor
+                                                <span class="chip chip-active chip-secondary rounded-pill ms-5" title="Chiuso">
+                                                    Chiuso
+                                                </span>
+                                            </button>
+                                        </h4>
+                                        <div id="accordion-example-chips-collapse-1" class="accordion-collapse collapse show" aria-labelledby="accordion-example-chips-heading-1">
+                                            <div class="accordion-body">
+                                                Etiam id ornare augue. Sed efficitur consectetur dictum. Phasellus vitae lectus eleifend, pulvinar eros id, placerat lectus. Donec in dignissim mauris.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h4 class="accordion-header" id="accordion-example-chips-heading-2">
+                                            <button class="accordion-button accordion-button-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-example-chips-collapse-2" aria-controls="accordion-example-chips-collapse-2">
+                                                Titolo accordion
+                                                <span class="chip chip-active chip-secondary rounded-pill ms-5" title="Chiuso">
+                                                    Chiuso
+                                                </span>
+                                            </button>
+                                        </h4>
+                                        <div id="accordion-example-chips-collapse-2" class="accordion-collapse collapse" aria-labelledby="accordion-example-chips-heading-2">
+                                            <div class="accordion-body">Contenuto accordion</div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h4 class="accordion-header" id="accordion-example-chips-heading-3">
+                                            <button class="accordion-button accordion-button-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-example-chips-collapse-3" aria-controls="accordion-example-chips-collapse-3">
+                                                Titolo accordion<span class="chip chip-active chip-success rounded-pill ms-5" title="Aperto">
+                                                    Aperto
+                                                </span>
+                                            </button>
+                                        </h4>
+                                        <div id="accordion-example-chips-collapse-3" class="accordion-collapse collapse" aria-labelledby="accordion-example-chips-heading-3">
+                                            <div class="accordion-body">Contenuto accordion</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <h3 class="mb-4 mt-5">Pillole  formative</h3>
+                                <p>A tua disposizione, nel canale Youtube del Dipartimento per la Transizione Digitale, 11 pillole informative inerenti le funzionalità più utilizzate di Anagrafe Nazionale.</p>
+                                <ul>
+                                    <li><a href="#">Video 1 – Rettifica dati subentro o dati iscrizione<span class="visually-hidden">: apre una nuova finestra</span> <i class="icon bi bi-box-arrow-up-right ms-2"></i></a></li>
+                                    <li><a href="#">Video 2 – Come eliminare un’operazione “sospesa"<span class="visually-hidden">: apre una nuova finestra</span> <i class="icon bi bi-box-arrow-up-right ms-2"></i></a></li>
+                                    <li><a href="#">Video 3 – Come collegare due codici fiscali afferenti allo stesso cittadino<span class="visually-hidden">: apre una nuova finestra</span> <i class="icon bi bi-box-arrow-up-right ms-2"></i></a></li>
+                                </ul>
+                                <div id="collapseDiv" class="collapse-div">
+                                    <div class="collapse-header" id="heading">
+                                        <a class="collapsed" href="#collapse" data-bs-toggle="collapse" data-bs-target="#collapse" aria-expanded="false" aria-controls="collapse">
+                                            Mostra le altre pillole formative
+                                        </a>
+                                    </div>
+                                    <div id="collapse" class="collapse" role="region" aria-labelledby="heading">
+                                        <div class="collapse-body">
+                                            <ul>
+                                                <li><a href="#">Item 1<span class="visually-hidden">: apre una nuova finestra</span></a></li>
+                                                <li><a href="#">Item 2<span class="visually-hidden">: apre una nuova finestra</span></a></li>
+                                                <li><a href="#">Item 3<span class="visually-hidden">: apre una nuova finestra</span></a></li>
+                                                <li><a href="#">Item 4<span class="visually-hidden">: apre una nuova finestra</span></a></li>
+                                                <li><a href="#">Item 5<span class="visually-hidden">: apre una nuova finestra</span></a></li>
+                                                <li><a href="#">Item 6<span class="visually-hidden">: apre una nuova finestra</span></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <a class="fw-semibold" href="#">Vai sul canale Youtube<span class="visually-hidden">: apre una nuova finestra</span> <i class="bi bi-youtube ms-2"></i></a>
+
+                                <div class="card mt-5">
+                                    <div class="card-body d-flex flex-column flex-md-row align-items-center">
+                                        <h3 class="card-title">Accedi ai servizi anagrafici per richiedere un certificato.</h3>
+                                        <a class="btn btn-primary mt-3 mt-md-0 ms-md-auto">
+                                            <span class="rounded-icon"><i class="icon bi bi-person-fill"></i></span> ACCEDI AI SERVIZI
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <h3 class="mt-5 mb-4">Card interne</h3>
+                        <div class="row row-cols-1 row-cols-md-3 g-4">
+                            <div class="col">
+                                <div class="card fs-16 h-100">
+                                    <div class="card-body">
+                                        <p class="text-category mb-3"><span class="fw-semibold">SICUREZZA</span></p>
+                                        <p class="card-text">Tuteliamo i dati personali dei cittadini grazie a un sistema integrato, efficace e <strong>attento agli standard di sicurezza</strong>.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card fs-16 h-100">
+                                    <div class="card-body">
+                                        <p class="text-category mb-3"><span class="fw-semibold">SUPPORTO</span></p>
+                                        <p class="card-text"><strong>Accompagniamo</strong> i cittadini nella fruizione dei servizi anagrafici <strong>in maniera trasparente e intuitiva</strong>.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card fs-16 h-100">
+                                    <div class="card-body">
+                                        <p class="text-category mb-3"><span class="fw-semibold">AUTONOMIA</span></p>
+                                        <p class="card-text fs-16">Garantiamo l'accesso semplice ai servizi anagrafici, basati su dati condivisi e aggiornati, <strong>senza passare allo sportello</strong>.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3 class="mt-5 mb-4">Tabella</h3>
+                        <div class="table-responsive">
+                             <table class="table">
+                                <caption class="visually-hidden">Altre tabelle di fonte esterna</caption>
+                                    <thead class="visually-md-down-hidden">
+                                        <tr>
+                                            <th scope="col">Codice</th>
+                                            <th scope="col">Contenuto</th>
+                                            <th scope="col">Fonte</th>
+                                            <th scope="col">Data ultimo aggiornamento</th>
+                                            <th scope="col">Note</th>
+                                        </tr>
+                                    </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">04</th>
+                                        <td data-th="Contenuto:"><a href="/wp-content/uploads/2020/06/Tabella_4.xlsx">Specie toponimo – xlsx</a></td>
+                                        <td data-th="Fonte:">Agenzia delle Entrate</td>
+                                        <td data-th="Data ultimo aggiornamento:">&nbsp;</td>
+                                        <td data-th="Note:">&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">24</th>
+                                        <td data-th="Contenuto:"><a href="/wp-content/uploads/Tabella-24-Elenco-Consolati_20220322.xls">Elenco Consolati – xlsx</a></td>
+                                        <td data-th="Fonte:">Servizi demografici del Ministero dell’Interno</td>
+                                        <td data-th="Data ultimo aggiornamento:">22 marzo 2022</td>
+                                        <td data-th="Note:">Istituzione VICE CONSOLATO D’ITALIA di ARONA – SPAGNA</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">40</th>
+                                        <td data-th="Contenuto:"><a href="/wp-content/uploads/2020/06/tabella-40.pdf" target="_blank" rel="noopener noreferrer">Caratteri diacritici – pdf <span class="sr-only">(Apertura nuova finestra)</span></a></td>
+                                        <td data-th="Fonte:">Ministero della Funzione Pubblica</td>
+                                        <td data-th="Data ultimo aggiornamento:">&nbsp;</td>
+                                        <td data-th="Note:">&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">41</th>
+                                        <td data-th="Contenuto:"><a href="/wp-content/uploads/T_Assoc-StatoTerritConsolato_20220420.xls">Stati Territori Consolati – xls</a></td>
+                                        <td data-th="Fonte:">Servizi demografici del Ministero dell’Interno</td>
+                                        <td data-th="Data ultimo aggiornamento:">20 aprile 2022</td>
+                                        <td data-th="Note:">ANGUILLA e MONTSERRAT passano per competenza dall’Ambasciata di Caracas (2840103) a quella di Panama (2780100).</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <h3 class="mt-5 mb-4">Tabella ottimizzata per smartphone</h3>
+                        <div class="table-responsive table-adaptive-md">
+                             <table class="table row-divided">
+                                <caption class="visually-hidden">Altre tabelle di fonte esterna</caption>
+                                    <thead class="visually-md-down-hidden">
+                                        <tr>
+                                            <th scope="col">Codice</th>
+                                            <th scope="col">Contenuto</th>
+                                            <th scope="col">Fonte</th>
+                                            <th scope="col">Data ultimo aggiornamento</th>
+                                            <th scope="col">Note</th>
+                                        </tr>
+                                    </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">04</th>
+                                        <td data-th="Contenuto:"><a href="/wp-content/uploads/2020/06/Tabella_4.xlsx">Specie toponimo – xlsx</a></td>
+                                        <td data-th="Fonte:">Agenzia delle Entrate</td>
+                                        <td data-th="Data ultimo aggiornamento:">&nbsp;</td>
+                                        <td data-th="Note:">&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">24</th>
+                                        <td data-th="Contenuto:"><a href="/wp-content/uploads/Tabella-24-Elenco-Consolati_20220322.xls">Elenco Consolati – xlsx</a></td>
+                                        <td data-th="Fonte:">Servizi demografici del Ministero dell’Interno</td>
+                                        <td data-th="Data ultimo aggiornamento:">22 marzo 2022</td>
+                                        <td data-th="Note:">Istituzione VICE CONSOLATO D’ITALIA di ARONA – SPAGNA</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">40</th>
+                                        <td data-th="Contenuto:"><a href="/wp-content/uploads/2020/06/tabella-40.pdf" target="_blank" rel="noopener noreferrer">Caratteri diacritici – pdf <span class="sr-only">(Apertura nuova finestra)</span></a></td>
+                                        <td data-th="Fonte:">Ministero della Funzione Pubblica</td>
+                                        <td data-th="Data ultimo aggiornamento:">&nbsp;</td>
+                                        <td data-th="Note:">&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">41</th>
+                                        <td data-th="Contenuto:"><a href="/wp-content/uploads/T_Assoc-StatoTerritConsolato_20220420.xls">Stati Territori Consolati – xls</a></td>
+                                        <td data-th="Fonte:">Servizi demografici del Ministero dell’Interno</td>
+                                        <td data-th="Data ultimo aggiornamento:">20 aprile 2022</td>
+                                        <td data-th="Note:">ANGUILLA e MONTSERRAT passano per competenza dall’Ambasciata di Caracas (2840103) a quella di Panama (2780100).</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="title-box page-title d-flex flex-column align-items-center align-items-md-start justify-content-center justify-content-md-start mb-3 p-0">
+                                    <div class="d-flex w-100">
+                                        <h2>Online il nuovo servizio di dichiarazione cambio di residenza</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="coll-12">
+                                <span class="d-block fs-16 mb-4"><span class="fw-bold">COMUNICATO STAMPA - </span> 27 APRILE 2022</span>
+                                <p>In merito al servizio di dichiarazione di un cambio di residenza dal portale ANPR, si segnala la Circolare n. 36 del 21 aprile 2022 del Ministero dell'Interno - Dipartimento per gli Affari Interni e Territoriali. Dal 27 aprile tutti i cittadini possono richiedere online il cambio di residenza o di dimora da un Comune all’altro in Italia o il rimpatrio dall’estero per i cittadini iscritti all’AIRE. Può essere richiesto anche il cambio di abitazione nell’ambito di un qualsiasi Comune. Per il Comune di Roma, in attesa del completamento degli interventi tecnici, sino al 30/06/2022 il servizio di cambio di residenza on line è disponibile sul portale dello stesso Comune. I Comuni potranno gestire le richieste tramite la Web Application o tramite l'applicativo locale, previa integrazione del software con i web services resi disponibili da ANPR (si rimanda alle istruzioni presenti su github https://github.com/italia/anpr/issues/3043 ). In allegato alla Circolare è presente anche la “guida operativa per i Comuni”.</p>
+                                <a class="d-block text-uppercase mt-4" href="#"><i class="icon bi bi-arrow-left me-2"></i> Torna a notizie</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+       
+
+        <section class="section section-lg section-banner anpr-bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 offset-md-2 col-md-8 offset-lg-3 col-lg-6">
+                        <div class="d-flex flex-column flex-md-row align-items-center align-items-md-start justify-content-center">
+                            <img class="icon icon-heading" src="img/ico-faq.svg" alt="Faq">
+                            <div class="title-box page-title">
+                                <h3>Vuoi saperne di più?</h3>
+                                <a class="text-uppercase" href="#">Vai alle domande frequenti <i class="icon bi bi-arrow-right ms-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-lg section-poll anpr-bg-dark">
+            <div class="container">
+                <div class="row">
+                    <div class="offset-1 col-9 offset-lg-3 col-lg-6">
+                        <div class="d-flex flex-column">
+                            <div class="title-box">
+                                <h3 class="page-title mb-5">Questa pagina ti è stata utile?</h3>
+                            </div>
+                            <form>
+                                <div role="radiogroup" class="form-check-inline-container" aria-labelledby="poll">
+                                    <span class="visually-hidden" id="poll">Seleziona un'opzione</span>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" aria-labelledby="utile-si">
+                                        <label id="utile-si" class="form-check-label" for="inlineRadio1">Sì</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" aria-labelledby="utile-no">
+                                        <label id="utile-no" class="form-check-label" for="inlineRadio2">No</label>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div class="footer-dark">
+            <div class="container py-3 py-md-5">
+                <div class="row align-items-center gx-2 gx-md-4 mb-5">
+                    <div class="col-auto">
+                        <img src="img/logo-it-bianco.svg" alt="" class="logo">
+                    </div>
+                    <div class="col">
+                        <div class="h1">
+                            Anagrafe Nazionale<small>Unica. <span class="fw-bold">Per tutti.</span></small>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <h3>Cos'è l'Anagrafe</h3>
+                        <div class="row">
+                            <div class="col-12 col-sm">
+                                <ul class="link-list mb-5">
+                                    <li><a class="list-item" href="#">La missione</a></li>
+                                    <li><a class="list-item" href="#">I numeri</a></li>
+                                    <li><a class="list-item" href="#">Le notizie</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <h3>SERVIZI ANAGRAFICI</h3>
+                        <div class="row">
+                            <div class="col-12 col-sm">
+                                <ul class="link-list mb-5">
+                                    <li><a class="list-item" href="#">Visura e autocertificazioni</a></li>
+                                    <li><a class="list-item" href="#">Certificati</a></li>
+                                    <li><a class="list-item" href="#">Rettifica dati</a></li>
+                                    <li><a class="list-item" href="#">Cambio di residenza</a></li>
+                                    <li><a class="list-item" href="#">Domicilio digitale</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <h3>AREA TECNICA</h3>
+                        <div class="row">
+                            <div class="col-12 col-sm">
+                                <ul class="link-list mb-5">
+                                    <li><a class="list-item" href="#">Accordi di fruizione</a></li>
+                                    <li><a class="list-item" href="#">Archivio storico dei Comuni</a></li>
+                                    <li><a class="list-item" href="#">Formazione</a></li>
+                                    <li><a class="list-item" href="#">Guida all'anagrafe</a></li>
+                                    <li><a class="list-item" href="#">Risorse documenti</a></li>
+                                    <li><a class="list-item" href="#">Tabelle di decodifica</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <h3>SUPPORTO</h3>
+                        <div class="row">
+                            <div class="col-12 col-sm">
+                                <ul class="link-list mb-5">
+                                    <li><a class="list-item" href="#">Vai a tutte le domande</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="footer-small">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <ul class="list-inline d-inline-block my-4">
+
+                            <li class="list-inline-item d-block d-md-inline-block">
+                                <a href="#" class="link-white">Dichiarazione di accessibilità<span class="visually-hidden">: apre una nuova finestra</span> <i class="icon bi bi-box-arrow-up-right ms-2"></i></a>
+                            </li>
+                            <li class="list-inline-item d-block d-md-inline-block">
+                                <a href="#" class="link-white">Crediti</a>
+                            </li>
+                            <li class="list-inline-item d-block d-md-inline-block">
+                                <a href="#" class="link-white">Note legali</a>
+                            </li>
+                            <li class="list-inline-item d-block d-md-inline-block">
+                                <a href="#" class="link-white">Privacy</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <button type="button" id="scroll-top-btn" class="back-to-top shadow" title="Torna all'inizio" aria-hidden="true">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+    <div class="access-sticky">
+        <button type="button" class="btn btn-primary btn-sm access">
+            <span class="rounded-icon"><i class="icon bi bi-person-fill"></i></span> Accedi ai servizi
+        </button>
+    </div>
+
+     <!-- Jquery -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+     <!-- Splide JS -->
+    <script src="js/splide.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/custom.js"></script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+<svg id="Raggruppa_13609" data-name="Raggruppa 13609" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="133.753" height="146.821" viewBox="0 0 133.753 146.821">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Tracciato_47691" data-name="Tracciato 47691" d="M60.243,107.715a6.633,6.633,0,0,1,13.266,0v32.77H60.243ZM6.336,88.573l6.732-1.685v53.6H6.336Zm114.349-1.685,6.732,1.685v51.912h-6.732ZM19.405,85.3l6.731-1.683v56.864H19.405Zm88.211-1.683,6.731,1.683v55.181h-6.731ZM32.474,82.037,39.2,80.353v60.132H32.474Zm62.075-1.684,6.732,1.684v58.448H94.548ZM45.542,61.213,66.876,38.456,88.211,61.213v79.273H79.845v-32.77a12.969,12.969,0,0,0-25.939,0v32.77H45.542ZM86.4,11.687h8.06l-1.8,3.594a3.2,3.2,0,0,0,0,2.833l1.8,3.592H86.4ZM70.044,6.335H80.063V16.354H70.044ZM66.876,0a3.17,3.17,0,0,0-3.167,3.168v29.4L40.061,57.794a3.162,3.162,0,0,0-.857,2.167V73.825L16.838,79.416a3.07,3.07,0,0,0-2.6.649L2.4,83.026A3.164,3.164,0,0,0,0,86.1v57.555a3.171,3.171,0,0,0,3.168,3.168H130.585a3.171,3.171,0,0,0,3.168-3.168V86.1a3.165,3.165,0,0,0-2.4-3.073l-11.84-2.96a3.072,3.072,0,0,0-2.6-.65L94.548,73.825V59.961a3.157,3.157,0,0,0-.858-2.167L70.044,32.571v-9.88H80.063v2.183a3.171,3.171,0,0,0,3.168,3.168H99.586a3.15,3.15,0,0,0,2.694-1.5,3.189,3.189,0,0,0,.138-3.083L99.039,16.7l3.38-6.76a3.192,3.192,0,0,0-.138-3.084,3.15,3.15,0,0,0-2.694-1.5H86.4V3.168A3.171,3.171,0,0,0,83.231,0Z" fill="#0f5db0" stroke="rgba(0,0,0,0)" stroke-width="1"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <path id="Tracciato_47692" data-name="Tracciato 47692" d="M50.166,56.412a5,5,0,1,1,5,5,5.007,5.007,0,0,1-5-5m-6.335,0A11.335,11.335,0,1,0,55.166,45.075,11.348,11.348,0,0,0,43.831,56.412" transform="translate(-43.831 -45.075)" fill="#0f5db0" stroke="rgba(0,0,0,0)" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Raggruppa_13606" data-name="Raggruppa 13606">
+    <g id="Raggruppa_13605" data-name="Raggruppa 13605" clip-path="url(#clip-path)">
+      <rect id="Rettangolo_5139" data-name="Rettangolo 5139" width="133.753" height="146.821" transform="translate(0 0)" fill="#0f5db0" stroke="rgba(0,0,0,0)" stroke-width="1"/>
+    </g>
+  </g>
+  <g id="Raggruppa_13608" data-name="Raggruppa 13608" transform="translate(55.541 57.117)">
+    <g id="Raggruppa_13607" data-name="Raggruppa 13607" clip-path="url(#clip-path-2)">
+      <rect id="Rettangolo_5140" data-name="Rettangolo 5140" width="22.671" height="22.672" transform="translate(0 0)" fill="#0f5db0" stroke="rgba(0,0,0,0)" stroke-width="1"/>
+    </g>
+  </g>
+</svg>

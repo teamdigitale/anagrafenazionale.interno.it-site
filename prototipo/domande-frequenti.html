@@ -1,0 +1,597 @@
+<!doctype html>
+<html lang="it">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap icons -->
+    <link href="css/bootstrap-icons.css" rel="stylesheet" />
+    <!-- CSS del tema -->
+    <link href="css/italia.css" rel="stylesheet" />
+    <!-- CSS del carousel -->
+    <link href="css/splide.min.css" rel="stylesheet" />
+    <!-- CSS custom -->
+    <link href="css/custom.css" rel="stylesheet" />
+
+    <title>Domande frequenti / Anagrafe Nazionale</title>
+</head>
+
+<body>
+    <a class="visually-hidden" href="#main" aria-label="link a contenuto principale">Vai al contenuto principale</a>
+    <header aria-label="Funzioni di servizio">
+        <div class="header-top-light">
+            <div class="container px-custom py-2">
+                <div class="row align-items-center gx-2 gx-md-4">
+                    <div class="col">
+                        <a href="https://www.interno.gov.it/it" target="_blank" class="link-primary fw-semibold">Ministero dell'Interno<span class="visually-hidden">: apre una nuova finestra</span></a>
+                    </div>
+                    <div class="col col-md-auto d-flex align-items-center justify-content-end">
+                        <div class="dropdown">
+                            <button type="button" id="lingue-disponibili" class="btn btn-sm link-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="visually-hidden">Lingue disponibili:</span>ITA
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="lingue-disponibili">
+                                <li>
+                                    <a class="dropdown-item" href="#" lang="de">DEU<span class="visually-hidden">: deutsche</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#" lang="en">ENG<span class="visually-hidden">: english</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#" lang="sl">SLO<span class="visually-hidden">: slovenian</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <button type="button" class="btn btn-primary btn-sm access ms-3">
+                            <span class="rounded-icon d-none d-md-flex"><i class="icon bi bi-person-fill"></i></span> Accedi <span class="d-none d-md-inline ms-1">AI SERVIZI</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-light">
+            <div class="container px-custom pt-3 py-md-4">
+                <div class="d-flex align-items-center gx-2 gx-md-4">
+                    
+                        <!--<button type="button" class="navbar-toggler me-3" data-bs-toggle="collapse" href="#navbar-menu" role="button" aria-expanded="false" aria-controls="navbar-menu">
+                            <span class="visually-hidden">Apri menu principale</span>
+                            <i class="bi bi-list bi-lg"></i>
+                        </button>-->
+
+                        <button type="button" class="navbar-toggler me-3" data-bs-toggle="offcanvas" data-bs-target="#navbar-menu" aria-controls="navbar-menu" aria-label="Apri menu principale">
+                            <span class="visually-hidden">Apri menu principale</span>
+                            <i class="bi bi-list bi-lg"></i>
+                        </button>
+                    
+                        <img src="img/logo-anpr.svg" alt="Logo Anagrafe Nazionale" class="logo me-2 me-lg-4" />
+                   
+                        <h1>Anagrafe Nazionale<small>Unica. <span class="fw-bold">Per tutti.</span></small></h1>
+                    
+                        <a class="d-md-none ms-auto" href="#"><i class="bi bi-search"></i></a>
+                    
+                    
+                    <div class="d-none d-md-block ms-auto">
+                        <form  class="navbar-form">
+                            <label for="search" class="visually-hidden">Cerca nel sito:</label>
+                            <div class="input-group input-group-lg">
+                                <input type="text" id="search" name="search" class="form-control border-primary" placeholder="Cerca nel sito" />
+                                <button type="submit" class="btn btn-primary">
+                                    <i class="bi bi-search"></i>
+                                    <span class="visually-hidden">Cerca</span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav class="main-nav" aria-label="Menu principale">
+        <div class="visually-hidden">Menu principale</div>
+        <div class="navbar navbar-expand-md navbar-light">
+            <div class="container px-custom">
+                <div class="d-flex align-items-center w-100">
+                    <button type="button" class="navbar-toggler sticky me-3" data-bs-toggle="offcanvas" data-bs-target="#navbar-menu" aria-controls="navbar-menu" aria-label="Apri menu principale">
+                        <span class="visually-hidden">Apri menu principale</span>
+                        <i class="bi bi-list bi-lg"></i>
+                    </button>
+                    <img src="img/logo-anpr-bianco.svg" alt="" class="logo me-2" />
+                    <div class="head-title-mobile">Anagrafe Nazionale<small>Unica. <span class="fw-bold">Per tutti.</span></small></div>
+                    <a class="search ms-auto" href="#"><i class="bi bi-search"></i></a>
+
+                    <div class="navbar-collapse collapse" id="navbar-menu">
+
+                        <button type="button" class="navbar-toggler btn-close" data-bs-dismiss="offcanvas" aria-label="Chiudi menu principale" data-bs-target="#navbar-menu">
+                            <span class="visually-hidden">Chiudi menu principale</span>
+                            <i class="bi bi-x"></i>
+                        </button>
+                        <div class="menu-wrapper d-flex flex-column flex-md-row px-3 px-md-0">
+                            <ul class="navbar-nav main-navbar">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Cos'è l'Anagrafe</a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a class="dropdown-item" href="#">La missione</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">I numeri</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Le notizie</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item fw-bold" href="#">Scopri Cos'è l'Anagrafe <i class="icon bi bi-arrow-right ms-2"></i></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Servizi anagrafici</a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a class="dropdown-item" href="#">Visura e autocertificazioni</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Certificati</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Rettifica dati</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Cambio di residenza</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Domicilio digitale</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item fw-bold" href="#">Scopri i Servizi anagrafici<i class="icon bi bi-arrow-right ms-2"></i></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Area tecnica</a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a class="dropdown-item" href="#">Accordi di fruizione</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Formazione</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Documentazione tecnica</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Tabelle di decodifica</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Archivio storico dei comuni</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Guida all'anagrafe</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item fw-bold" href="#">Scopri l'Area Tecnica<i class="icon bi bi-arrow-right ms-2"></i></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="navbar-nav ms-md-auto">
+                                <li class="nav-item dropdown active">
+                                    <a class="nav-link question active" href="#">
+                                        <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 80 80">
+                                            <path id="Icon_material-question-answer" data-name="Icon material-question-answer" d="M79,19H71V55H19v8a4.012,4.012,0,0,0,4,4H67L83,83V23A4.012,4.012,0,0,0,79,19ZM63,43V7a4.012,4.012,0,0,0-4-4H7A4.012,4.012,0,0,0,3,7V63L19,47H59A4.012,4.012,0,0,0,63,43Z" transform="translate(-3 -3)" />
+                                        </svg>Domande frequenti
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="access-container">
+                                <button type="button" class="btn btn-primary btn-sm access ms-md-3">
+                                    <span class="rounded-icon"><i class="icon bi bi-person-fill"></i></span> ACCEDI AI SERVIZI
+                                </button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main">
+        <section class="section section-breadcrumb">
+            <div class="container px-custom">
+                <div class="col-12">
+                    <nav style="--bs-breadcrumb-divider: '|';" aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Domande frequenti</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container px-custom">
+                <div class="row">
+                    <div class="col-lg-3 d-none d-lg-block"></div>
+                    <div class="col-12 col-lg-8" tabindex="0">
+                        <div class="title-box page-title d-flex flex-column align-items-md-start justify-content-center justify-content-md-start mb-5">
+
+                            <div class="d-flex align-items-center align-items-md-start w-100 mb-3 mb-md-0">
+                                <img class="icon icon-heading"  src="img/ico-faq.svg" alt="Domande frequenti">
+                                <h2 class="mb-0 mb-md-3">Domande frequenti</h2>
+                            </div>
+
+                            <div class="text-box d-flex flex-column">
+                                <form class="form-title">
+                                    <label class="mb-2" id="label-search-faq" for="search-faq">Cerca nelle domande frequenti:</label>
+                                    <div class="input-group input-group-lg">
+                                        <input type="text" id="search-faq" name="search-faq" class="form-control border-primary" aria-labelledby="label-search-faq">
+                                        <button type="submit" class="btn btn-primary">
+                                            <i class="bi bi-search"></i>
+                                            <span class="visually-hidden">Cerca</span>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <aside id="laterale" class="col-lg-3 d-none d-lg-block ps-0">
+                        <nav id="indice-contenuti" class="navbar navbar-left top-navscroll affix-top bg-white flex-column align-items-start">
+                            <div class="sidebar-header pt-2">
+                                <h3 class="sidebar-title">Indice dei contenuti</h3>
+                            </div>
+                            <nav class="nav nav-pills flex-column">
+                                <a aria-label="Generali" class="nav-link active" href="#generali">Generali</a>
+                                <a aria-label="Visura e autocertificazioni" class="nav-link" href="#visura">Visura e autocertificazioni</a>
+                                <a aria-label="Certificati" class="nav-link" href="#certificati">Certificati</a>
+                                <a aria-label="Rettifica dati" class="nav-link" href="#rettifica">Rettifica dati</a>
+                                <a aria-label="Cambio di residenza" class="nav-link" href="#cambio-residenza">Cambio di residenza</a>
+                            </nav>
+                        </nav>
+                    </aside>
+
+                    <div class="col-12 col-lg-8 page-sections-container faq" tabindex="0">
+                        <div class="row">
+                            <div aria-hidden="true" aria-label="indice di pagina mobile" class="col-12 d-lg-none sticky-top px-0 indice-laterale">
+                                <div class="accordion mb-0" id="indice-di-pagina">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="indice-di-pagina-headingOne">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#indice-di-pagina-collapseOne" aria-expanded="false" aria-controls="indice-di-pagina-collapseOne">
+                                                Indice dei contenuti
+                                            </button>
+                                        </h2>
+                                        <div id="indice-di-pagina-collapseOne" class="accordion-collapse collapse" aria-labelledby="indice-di-pagina-headingOne" data-bs-parent="#indice-di-pagina">
+                                            <div class="accordion-body">
+                                                <nav class="navbar top-navscroll">
+                                                    <ul class="navbar-nav">
+                                                        <li class="nav-item">
+                                                            <a class="nav-link active" aria-current="page" href="#generali">Generali</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" href="#visura">Visura e autocertificazioni</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" href="#certificati">Certificati</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" href="#rettifica">Rettifica dati</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" href="#cambio-residenza">Cambio di residenza</a>
+                                                        </li>
+                                                    </ul>
+                                                </nav>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <h3 class="mt-5 mt-lg-0 mb-4 anchor">
+                                    <span class="sr-only anchor-point" id="generali">Generali</span>
+                                    Generali
+                                </h3>
+                                <div class="accordion" id="accordion-generali">
+                                    <div class="accordion-item">
+                                        <h4 class="accordion-header" id="accordion-generali-heading-1">
+                                            <button class="accordion-button accordion-button-start" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-generali-collapse-1" aria-controls="accordion-generali-collapse-1">Ho visto che anche il sito del mio comune offre servizi simili al portale dell’Anagrafe Nazionale. Cosa cambia?</button>
+                                        </h4>
+                                        <div id="accordion-generali-collapse-1" class="accordion-collapse collapse show" aria-labelledby="accordion-generali-heading-1">
+                                            <div class="accordion-body">
+                                                Non ci sono differenze tra i certificati e i servizi rilasciati dal sito del tuo comune e quelli dell’Anagrafe Nazionale. Alcuni comuni di grandi dimensioni si sono dotati dei propri servizi online per rispondere meglio alle esigenze locali, mentre l’Anagrafe Nazionale è pensata come un unico luogo che fornisce servizi di pari livello per tutta la popolazione residente in Italia e per gli italiani all’estero iscritti all’AIRE.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h4 class="accordion-header" id="accordion-generali-heading-2">
+                                            <button class="accordion-button accordion-button-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-generali-collapse-2" aria-controls="accordion-generali-collapse-2">Titolo accordion</button>
+                                        </h4>
+                                        <div id="accordion-generali-collapse-2" class="accordion-collapse collapse" aria-labelledby="accordion-generali-heading-2">
+                                            <div class="accordion-body">Contenuto accordion</div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h4 class="accordion-header" id="accordion-generali-heading-3">
+                                            <button class="accordion-button accordion-button-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-generali-collapse-3" aria-controls="accordion-generali-collapse-3">Titolo accordion</button>
+                                        </h4>
+                                        <div id="accordion-generali-collapse-3" class="accordion-collapse collapse" aria-labelledby="accordion-generali-heading-3">
+                                            <div class="accordion-body">Contenuto accordion</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <h3 class="mt-5 mb-4 anchor">
+                                    <span class="sr-only anchor-point" id="visura">Visura e autocertificazioni</span>
+                                    Visura e autocertificazioni
+                                </h3>
+                                <div class="accordion" id="accordion-visura">
+                                    <div class="accordion-item">
+                                        <h4 class="accordion-header" id="accordion-visura-heading-1">
+                                            <button class="accordion-button accordion-button-start" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-accordion-visura-collapse-1" aria-controls="accordion-visura-collapse-1">Titolo accordion</button>
+                                        </h4>
+                                        <div id="accordion-visura-collapse-1" class="accordion-collapse collapse show" aria-labelledby="accordion-visura-heading-1">
+                                            <div class="accordion-body">Contenuto accordion</div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h4 class="accordion-header" id="accordion-visura-heading-2">
+                                            <button class="accordion-button accordion-button-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-visura-collapse-2" aria-controls="accordion-visura-collapse-2">Titolo accordion</button>
+                                        </h4>
+                                        <div id="accordion-visura-collapse-2" class="accordion-collapse collapse" aria-labelledby="accordion-visura-heading-2">
+                                            <div class="accordion-body">Contenuto accordion</div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h4 class="accordion-header" id="accordion-visura-heading-3">
+                                            <button class="accordion-button accordion-button-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-visura-collapse-3" aria-controls="accordion-visura-collapse-3">Titolo accordion</button>
+                                        </h4>
+                                        <div id="accordion-visura-collapse-3" class="accordion-collapse collapse" aria-labelledby="accordion-visura-heading-3">
+                                            <div class="accordion-body">Contenuto accordion</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <h3 class="mt-5 mb-4 anchor">
+                                    <span class="sr-only anchor-point" id="certificati">Certificati</span>
+                                    Certificati
+                                </h3>
+                                <div class="accordion" id="accordion-certificati">
+                                    <div class="accordion-item">
+                                        <h4 class="accordion-header" id="accordion-certificati-heading-1">
+                                            <button class="accordion-button accordion-button-start" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-certificati-collapse-1" aria-controls="accordion-certificati-collapse-1">Titolo accordion</button>
+                                        </h4>
+                                        <div id="accordion-certificati-collapse-1" class="accordion-collapse collapse show" aria-labelledby="accordion-certificati-heading-1">
+                                            <div class="accordion-body">Contenuto accordion</div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h4 class="accordion-header" id="accordion-certificati-heading-2">
+                                            <button class="accordion-button accordion-button-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-certificati-collapse-2" aria-controls="accordion-certificati-collapse-2">Titolo accordion</button>
+                                        </h4>
+                                        <div id="accordion-certificati-collapse-2" class="accordion-collapse collapse" aria-labelledby="accordion-certificati-heading-2">
+                                            <div class="accordion-body">Contenuto accordion</div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h4 class="accordion-header" id="accordion-certificati-heading-3">
+                                            <button class="accordion-button accordion-button-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-certificati-collapse-3" aria-controls="accordion-certificati-collapse-3">Titolo accordion</button>
+                                        </h4>
+                                        <div id="accordion-certificati-collapse-3" class="accordion-collapse collapse" aria-labelledby="accordion-certificati-heading-3">
+                                            <div class="accordion-body">Contenuto accordion</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <h3 class="mt-5 mb-4 anchor">
+                                    <span class="sr-only anchor-point" id="rettifica">Rettifica dati</span>
+                                    Rettifica dati
+                                </h3>
+                                <div class="accordion" id="accordion-rettifica">
+                                    <div class="accordion-item">
+                                        <h4 class="accordion-header" id="accordion-rettifica-heading-1">
+                                            <button class="accordion-button accordion-button-start" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-rettifica-collapse-1" aria-controls="accordion-rettifica-collapse-1">Titolo accordion</button>
+                                        </h4>
+                                        <div id="accordion-rettifica-collapse-1" class="accordion-collapse collapse show" aria-labelledby="accordion-rettifica-heading-1">
+                                            <div class="accordion-body">Contenuto accordion</div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h4 class="accordion-header" id="accordion-rettifica-heading-2">
+                                            <button class="accordion-button accordion-button-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-rettifica-collapse-2" aria-controls="accordion-rettifica-collapse-2">Titolo accordion</button>
+                                        </h4>
+                                        <div id="accordion-rettifica-collapse-2" class="accordion-collapse collapse" aria-labelledby="accordion-rettifica-heading-2">
+                                            <div class="accordion-body">Contenuto accordion</div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h4 class="accordion-header" id="accordion-rettifica-heading-3">
+                                            <button class="accordion-button accordion-button-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-rettifica-collapse-3" aria-controls="accordion-rettifica-collapse-3">Titolo accordion</button>
+                                        </h4>
+                                        <div id="accordion-rettifica-collapse-3" class="accordion-collapse collapse" aria-labelledby="accordion-rettifica-heading-3">
+                                            <div class="accordion-body">Contenuto accordion</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <h3 class="mt-5 mb-4 anchor">
+                                    <span class="sr-only anchor-point" id="cambio-residenza">Cambio di residenza</span>
+                                    Cambio di residenza
+                                </h3>
+                                <div class="accordion" id="accordion-cambio-residenza">
+                                    <div class="accordion-item">
+                                        <h4 class="accordion-header" id="accordion-cambio-residenza-heading-1">
+                                            <button class="accordion-button accordion-button-start" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-cambio-residenza-collapse-1" aria-controls="accordion-cambio-residenza-collapse-1">Titolo accordion</button>
+                                        </h4>
+                                        <div id="accordion-cambio-residenza-collapse-1" class="accordion-collapse collapse show" aria-labelledby="accordion-cambio-residenza-heading-1">
+                                            <div class="accordion-body">Contenuto accordion</div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h4 class="accordion-header" id="accordion-cambio-residenza-heading-2">
+                                            <button class="accordion-button accordion-button-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-cambio-residenza-collapse-2" aria-controls="accordion-cambio-residenza-collapse-2">Titolo accordion</button>
+                                        </h4>
+                                        <div id="accordion-cambio-residenza-collapse-2" class="accordion-collapse collapse" aria-labelledby="accordion-cambio-residenza-heading-2">
+                                            <div class="accordion-body">Contenuto accordion</div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h4 class="accordion-header" id="accordion-cambio-residenza-heading-3">
+                                            <button class="accordion-button accordion-button-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-cambio-residenza-collapse-3" aria-controls="accordion-cambio-residenza-collapse-3">Titolo accordion</button>
+                                        </h4>
+                                        <div id="accordion-cambio-residenza-collapse-3" class="accordion-collapse collapse" aria-labelledby="accordion-cambio-residenza-heading-3">
+                                            <div class="accordion-body">Contenuto accordion</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div class="footer-dark">
+            <div class="container py-3 py-md-5">
+                <div class="row align-items-center gx-2 gx-md-4 mb-5">
+                    <div class="col-auto">
+                        <img src="img/logo-it-bianco.svg" alt="" class="logo">
+                    </div>
+                    <div class="col">
+                        <div class="h1">
+                            Anagrafe Nazionale<small>Unica. <span class="fw-bold">Per tutti.</span></small>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <h3>Cos'è l'Anagrafe</h3>
+                        <div class="row">
+                            <div class="col-12 col-sm">
+                                <ul class="link-list mb-5">
+                                    <li><a class="list-item" href="#">La missione</a></li>
+                                    <li><a class="list-item" href="#">I numeri</a></li>
+                                    <li><a class="list-item" href="#">Le notizie</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <h3>SERVIZI ANAGRAFICI</h3>
+                        <div class="row">
+                            <div class="col-12 col-sm">
+                                <ul class="link-list mb-5">
+                                    <li><a class="list-item" href="#">Visura e autocertificazioni</a></li>
+                                    <li><a class="list-item" href="#">Certificati</a></li>
+                                    <li><a class="list-item" href="#">Rettifica dati</a></li>
+                                    <li><a class="list-item" href="#">Cambio di residenza</a></li>
+                                    <li><a class="list-item" href="#">Domicilio digitale</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <h3>AREA TECNICA</h3>
+                        <div class="row">
+                            <div class="col-12 col-sm">
+                                <ul class="link-list mb-5">
+                                    <li><a class="list-item" href="#">Accordi di fruizione</a></li>
+                                    <li><a class="list-item" href="#">Archivio storico dei Comuni</a></li>
+                                    <li><a class="list-item" href="#">Formazione</a></li>
+                                    <li><a class="list-item" href="#">Guida all'anagrafe</a></li>
+                                    <li><a class="list-item" href="#">Risorse documenti</a></li>
+                                    <li><a class="list-item" href="#">Tabelle di decodifica</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <h3>SUPPORTO</h3>
+                        <div class="row">
+                            <div class="col-12 col-sm">
+                                <ul class="link-list mb-5">
+                                    <li><a class="list-item" href="#">Vai a tutte le domande</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="footer-small">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <ul class="list-inline d-inline-block my-4">
+
+                            <li class="list-inline-item d-block d-md-inline-block">
+                                <a href="#" class="link-white">Dichiarazione di accessibilità<span class="visually-hidden">: apre una nuova finestra</span> <i class="icon bi bi-box-arrow-up-right ms-2"></i></a>
+                            </li>
+                            <li class="list-inline-item d-block d-md-inline-block">
+                                <a href="#" class="link-white">Crediti</a>
+                            </li>
+                            <li class="list-inline-item d-block d-md-inline-block">
+                                <a href="#" class="link-white">Note legali</a>
+                            </li>
+                            <li class="list-inline-item d-block d-md-inline-block">
+                                <a href="#" class="link-white">Privacy</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <button type="button" id="scroll-top-btn" class="back-to-top shadow" title="Torna all'inizio" aria-hidden="true">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+    <div class="access-sticky">
+        <button type="button" class="btn btn-primary btn-sm access">
+            <span class="rounded-icon"><i class="icon bi bi-person-fill"></i></span> Accedi ai servizi
+        </button>
+    </div>
+
+     <!-- Jquery -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+     <!-- Splide JS -->
+    <script src="js/splide.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/custom.js"></script>
+
+    <!--<script>
+        $(document).ready(function () {
+            var laterale = $("#laterale").offset().top;
+
+            $(window).scroll(function() {
+                var scroll = $(window).scrollTop();
+                if (scroll <= laterale ) {
+                $("aside .navbar.navbar-left .nav-pills .nav-link:first-child").addClass('active');
+                }
+            });
+        });
+    </script>-->
+
+
+</body>
+
+</html>
