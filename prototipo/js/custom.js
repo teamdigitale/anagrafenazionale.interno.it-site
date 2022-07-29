@@ -1,6 +1,5 @@
 $(document).ready(function () {
     var hieghtThreshold = $(".main-nav").offset().top;
-    
     var menu = $('.main-nav .navbar');
     var access = $('.access-sticky');
     var anchor = $('.anchor-point');
@@ -19,18 +18,10 @@ $(document).ready(function () {
             anchor.removeClass('fixed');
         }
 
-        /*if (anchorHeightToTop = 72 ) {
-          anchor.addClass('fixed');
-      } else {
-          anchor.removeClass('fixed');
-      }*/
-
         
     });
 
-    const scrollSpy = new bootstrap.ScrollSpy(document.body, {
-      target: '#indice-contenuti'
-    })
+    
 
     $('#navbar-menu').on('hidden.bs.offcanvas', function () {
       $(".navbar-toggler").active();
