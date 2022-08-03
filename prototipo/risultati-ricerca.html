@@ -1,0 +1,472 @@
+<!doctype html>
+<html lang="it">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap icons -->
+    <link href="css/bootstrap-icons.css" rel="stylesheet" />
+    <!-- CSS del tema -->
+    <link href="css/italia.css" rel="stylesheet" />
+    <!-- CSS del carousel -->
+    <link href="css/splide.min.css" rel="stylesheet" />
+    <!-- CSS custom -->
+    <link href="css/custom.css" rel="stylesheet" />
+    <title>Risultati ricerca / Anagrafe Nazionale</title>
+    <meta name="description" content="Da valorizzare">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon.ico">
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Da valorizzare" />
+    <meta property="og:url" content="Da valorizzare" />
+    <meta property="og:description" content="Da valorizzare" />
+    <meta property="og:image" content="Da valorizzare" />
+    <meta property="og:site_name" content="Da valorizzare" />
+</head>
+
+<body>
+    <a class="visually-hidden" href="#main" aria-label="link a contenuto principale">Vai al contenuto principale</a>
+    <header aria-label="Funzioni di servizio">
+        <div class="header-top-light">
+            <div class="container px-custom py-2">
+                <div class="row align-items-center gx-2 gx-md-4">
+                    <div class="col">
+                        <a href="https://www.interno.gov.it/it" target="_blank" class="link-primary fw-semibold">Ministero dell'Interno<span class="visually-hidden">: apre una nuova finestra</span></a>
+                    </div>
+                    <div class="col col-md-auto d-flex align-items-center justify-content-end">
+                        <div class="dropdown">
+                            <button type="button" id="lingue-disponibili" class="btn btn-sm link-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="visually-hidden">Lingue disponibili:</span>ITA
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="lingue-disponibili">
+                                <li>
+                                    <a class="dropdown-item" href="#" lang="de">DEU<span class="visually-hidden">: deutsche</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#" lang="en">ENG<span class="visually-hidden">: english</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#" lang="sl">SLO<span class="visually-hidden">: slovenian</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <button type="button" class="btn btn-primary btn-sm access ms-3">
+                            <span class="rounded-icon d-none d-md-flex"><i class="icon bi bi-person-fill"></i></span> Accedi <span class="d-none d-md-inline ms-1">ai servizi</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-light">
+            <div class="container px-custom pt-3 py-lg-4">
+                <div class="d-flex align-items-center gx-2 gx-md-4">
+                    
+                        <!--<button type="button" class="navbar-toggler me-3" data-bs-toggle="collapse" href="#navbar-menu" role="button" aria-expanded="false" aria-controls="navbar-menu">
+                            <span class="visually-hidden">Apri menu principale</span>
+                            <i class="bi bi-list bi-lg"></i>
+                        </button>-->
+
+                        <button type="button" class="navbar-toggler me-3" data-bs-toggle="offcanvas" data-bs-target="#navbar-menu" aria-controls="navbar-menu" aria-label="Apri menu principale">
+                            <span class="visually-hidden">Apri menu principale</span>
+                            <i class="bi bi-list bi-lg"></i>
+                        </button>
+                    
+                        <a href="homepage.html"><img src="img/logo-anpr.svg" alt="Logo Anagrafe Nazionale" class="logo me-2 me-lg-4" /></a>
+                   
+                        <h1>Anagrafe Nazionale<small>Unica. <span class="fw-bold">Per tutti.</span></small></h1>
+                    
+                        <a class="d-lg-none search-mobile ms-auto" href="#"><i class="bi bi-search"></i></a>
+                    
+                    
+                    <div class="d-none d-lg-block ms-auto">
+                        <form  class="navbar-form">
+                            <label for="search" class="visually-hidden">Cerca nel sito:</label>
+                            <div class="input-group input-group-lg">
+                                <input type="text" id="search" name="search" class="form-control border-primary" placeholder="Cerca nel sito" />
+                                <button type="submit" class="btn btn-primary">
+                                    <i class="bi bi-search"></i>
+                                    <span class="visually-hidden">Cerca</span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav class="main-nav" aria-label="Menu principale">
+        <div class="visually-hidden">Menu principale</div>
+        <div class="navbar navbar-expand-lg navbar-light">
+            <div class="container px-custom">
+                <div class="d-flex align-items-center w-100">
+                    <button type="button" class="navbar-toggler sticky me-3" data-bs-toggle="offcanvas" data-bs-target="#navbar-menu" aria-controls="navbar-menu" aria-label="Apri menu principale">
+                        <span class="visually-hidden">Apri menu principale</span>
+                        <i class="bi bi-list bi-lg"></i>
+                    </button>
+                    <a href="homepage.html"><img src="img/logo-anpr-bianco.svg" alt="" class="logo me-2" /></a>
+                    <div class="head-title-mobile">Anagrafe Nazionale<small>Unica. <span class="fw-bold">Per tutti.</span></small></div>
+                    <a class="search ms-auto" href="#"><i class="bi bi-search"></i></a>
+                    <div class="navbar-collapse collapse" id="navbar-menu">
+
+                        <button type="button" class="navbar-toggler btn-close" data-bs-dismiss="offcanvas" aria-label="Chiudi menu principale" data-bs-target="#navbar-menu">
+                            <span class="visually-hidden">Chiudi menu principale</span>
+                            <i class="bi bi-x"></i>
+                        </button>
+                        <div class="menu-wrapper d-flex flex-column flex-lg-row px-3 px-lg-0">
+                            <ul class="navbar-nav main-navbar">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Cos’è l’Anagrafe nazionale</a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a class="dropdown-item" href="#">Missione</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Numeri</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="notizie.html">Notizie</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item fw-semibold" href="#">Scopri cos'è l'Anagrafe nazionale <i class="icon bi bi-arrow-right ms-2"></i></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Servizi anagrafici</a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a class="dropdown-item" href="#">Visura e autocertificazioni</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="certificati.html">Certificati</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Rettifica dati</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Cambio di residenza</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Domicilio digitale</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item fw-semibold" href="#">Scopri i servizi anagrafici<i class="icon bi bi-arrow-right ms-2"></i></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Area tecnica</a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a class="dropdown-item" href="#">Accordi di fruizione</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Formazione</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Documentazione tecnica</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Tabelle di decodifica</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Archivio storico dei comuni</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Guida all'Anagrafe nazionale</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item fw-semibold" href="#">Scopri l'area tecnica<i class="icon bi bi-arrow-right ms-2"></i></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="navbar-nav ms-lg-auto">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link question" href="domande-frequenti.html">
+                                        <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 80 80">
+                                            <path id="Icon_material-question-answer" data-name="Icon material-question-answer" d="M79,19H71V55H19v8a4.012,4.012,0,0,0,4,4H67L83,83V23A4.012,4.012,0,0,0,79,19ZM63,43V7a4.012,4.012,0,0,0-4-4H7A4.012,4.012,0,0,0,3,7V63L19,47H59A4.012,4.012,0,0,0,63,43Z" transform="translate(-3 -3)" />
+                                        </svg>Domande frequenti
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="access-container">
+                                <button type="button" class="btn btn-primary access ms-lg-3">
+                                    <span class="rounded-icon"><i class="icon bi bi-person-fill"></i></span> ACCEDI AI SERVIZI
+                                </button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main">
+        <section class="section section-breadcrumb">
+            <div class="container px-custom">
+                <div class="col-12">
+                    <nav style="--bs-breadcrumb-divider: '|';" aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Cerca</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container px-custom">
+                
+                <div class="row">
+                    <div class="col-lg-3 d-none d-lg-block"></div>
+                    <div class="col-12 col-lg-8" tabindex="0">
+                        <div class="title-box page-title d-flex flex-column align-items-md-start justify-content-center justify-content-md-start mb-5">
+                            <div class="d-flex align-items-center align-items-md-start w-100 mb-3 mb-md-0">
+                                <img class="icon icon-heading" src="img/ico-ricerca.svg" alt="">
+                                <h2 class="mb-0 mb-md-3">Risultati ricerca</h2>
+                            </div>
+
+
+                             <div class="text-box d-flex flex-column">
+                                <form class="form-title">
+                                    <label class="mb-2" id="label-search-results" for="search-results">Cerca:</label>
+                                    <div class="input-group input-group-lg">
+                                        <input type="text" id="search-results" name="search-results" class="form-control border-primary" placeholder="Cerca nel sito" aria-labelledby="label-search-results">
+                                        <button type="submit" class="btn btn-primary">
+                                            <i class="bi bi-search"></i>
+                                            <span class="visually-hidden">Cerca</span>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 d-none d-lg-block"></div>
+                    <div class="col-12 col-lg-8">
+                        <span class="fw-bold fs-4">Non è stato trovato alcun risultato con le parole chiave indicate</span>
+                        <div class="text-dark mt-3">Risultati della ricerca: <strong>26</strong></div>
+                        <ul class="list ricerca">
+                            <li>
+                                <div class="d-flex">
+                                    <i class="icon bi bi-globe2 me-3"></i>
+                                    <div class="box-text">
+                                        <a href="#"><h3> Attivo da oggi in tutta Italia il servizio di cambio di <span class="highlight">residenza</span> online</h3></a>
+                                        <p>Entro la fine di dicembre 2015 l’Anagrafe Nazionale della Popolazione Residente sarà attiva … che hanno partecipato alla fase di sperimentazione dell’Anagrafe Unica Digitale...</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="d-flex">
+                                    <i class="icon bi bi-globe2 me-3"></i>
+                                    <div class="box-text">
+                                        <a href="#"><h3><span class="highlight">Lorem ipsum</span> dolor sit amet, consectetur adipiscing elit.</h3></a>
+                                        <p>Morbi tristique nisi ultricies velit tristique auctor. Etiam id ornare augue. Sed efficitur consectetur dictum. Phasellus vitae lectus eleifend, pulvinar eros id, placerat lectus.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="d-flex">
+                                    <i class="icon bi bi-globe2 me-3"></i>
+                                    <div class="box-text">
+                                        <a href="#"><h3><span class="highlight">Lorem ipsum</span> dolor sit amet, consectetur adipiscing elit.</h3></a>
+                                        <p>Morbi tristique nisi ultricies velit tristique auctor. Etiam id ornare augue. Sed efficitur consectetur dictum. Phasellus vitae lectus eleifend, pulvinar eros id, placerat lectus.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="d-flex">
+                                    <i class="icon bi bi-globe2 me-3"></i>
+                                    <div class="box-text">
+                                        <a href="#"><h3><span class="highlight">Lorem ipsum</span> dolor sit amet, consectetur adipiscing elit.</h3></a>
+                                        <p>Morbi tristique nisi ultricies velit tristique auctor. Etiam id ornare augue. Sed efficitur consectetur dictum. Phasellus vitae lectus eleifend, pulvinar eros id, placerat lectus.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="d-flex">
+                                    <i class="icon bi bi-globe2 me-3"></i>
+                                    <div class="box-text">
+                                        <a href="#"><h3><span class="highlight">Lorem ipsum</span> dolor sit amet, consectetur adipiscing elit.</h3></a>
+                                        <p>Morbi tristique nisi ultricies velit tristique auctor. Etiam id ornare augue. Sed efficitur consectetur dictum. Phasellus vitae lectus eleifend, pulvinar eros id, placerat lectus.</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <nav aria-label="Paginazione ...">
+                            <ul class="pagination">
+                                <li class="page-item">
+                                    <a class="page-link" href="#">
+                                        <span class="visually-hidden">Prima pagina</span>
+                                        <i class="bi bi-chevron-double-left"></i>
+                                    </a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">
+                                        <span class="visually-hidden">Pagina precedente</span>
+                                        <i class="bi bi-chevron-left"></i>
+                                    </a>
+                                </li>
+                                <li class="page-item active" aria-current="page">
+                                    <span class="page-link">
+                                        <span class="visually-hidden">Pagina </span>1
+                                    </span>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">
+                                        <span class="visually-hidden">Pagina </span>2
+                                    </a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">
+                                        <span class="visually-hidden">Pagina </span>3
+                                    </a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">
+                                        <span class="visually-hidden">Pagina successiva</span>
+                                        <i class="bi bi-chevron-right"></i>
+                                    </a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">
+                                        <span class="visually-hidden">Ultima pagina</span>
+                                        <i class="bi bi-chevron-double-right"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-dark">
+            <div class="container px-custom py-3 py-md-5">
+                <div class="row align-items-center gx-2 gx-md-4 mb-5">
+                    <div class="col-auto">
+                        <a href="homepage.html"><img src="img/logo-anpr-bianco.svg" alt="Logo Anagrafe Nazionale" class="logo"></a>
+                    </div>
+                    <div class="col">
+                        <div class="h1">
+                            Anagrafe Nazionale<small>Unica. <span class="fw-bold">Per tutti.</span></small>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <h3>Cos'è l'Anagrafe nazionale</h3>
+                        <div class="row">
+                            <div class="col-12 col-sm">
+                                <ul class="link-list mb-5">
+                                    <li><a class="list-item" href="#">Missione</a></li>
+                                    <li><a class="list-item" href="#">Numeri</a></li>
+                                    <li><a class="list-item" href="notizie.html">Notizie</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <h3>SERVIZI ANAGRAFICI</h3>
+                        <div class="row">
+                            <div class="col-12 col-sm">
+                                <ul class="link-list mb-5">
+                                    <li><a class="list-item" href="#">Visura e autocertificazioni</a></li>
+                                    <li><a class="list-item" href="certificati.html">Certificati</a></li>
+                                    <li><a class="list-item" href="#">Rettifica dati</a></li>
+                                    <li><a class="list-item" href="#">Cambio di residenza</a></li>
+                                    <li><a class="list-item" href="#">Domicilio digitale</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <h3>AREA TECNICA</h3>
+                        <div class="row">
+                            <div class="col-12 col-sm">
+                                <ul class="link-list mb-5">
+                                    <li><a class="list-item" href="#">Accordi di fruizione</a></li>
+                                    <li><a class="list-item" href="#">Formazione</a></li>
+                                    <li><a class="list-item" href="#">Documentazione tecnica</a></li>
+                                    <li><a class="list-item" href="#">Tabelle di decodifica</a></li>
+                                    <li><a class="list-item" href="#">Archivio storico dei comuni</a></li>
+                                    <li><a class="list-item" href="#">Guida all'Anagrafe nazionale</a></li>
+                                   
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <h3>DOMANDE FREQUENTI</h3>
+                        <div class="row">
+                            <div class="col-12 col-sm">
+                                <ul class="link-list mb-5">
+                                    <li><a class="list-item" href="#">Vai a tutte le domande</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="footer-small">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <ul class="list-inline d-inline-block my-4">
+
+                            <li class="list-inline-item d-block d-md-inline-block">
+                                <a href="#" class="link-white">Dichiarazione di accessibilità <span class="visually-hidden">: apre una nuova finestra</span><i class="icon bi bi-box-arrow-up-right ms-2"></i></a>
+                            </li>
+                            <li class="list-inline-item d-block d-md-inline-block">
+                                <a href="#" class="link-white">Crediti</a>
+                            </li>
+                            <li class="list-inline-item d-block d-md-inline-block">
+                                <a href="#" class="link-white">Note legali</a>
+                            </li>
+                            <li class="list-inline-item d-block d-md-inline-block">
+                                <a href="#" class="link-white">Informativa privacy</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <button type="button" id="scroll-top-btn" class="back-to-top shadow" title="Torna all'inizio" aria-hidden="true">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+    <div class="access-sticky">
+        <button type="button" class="btn btn-primary access">
+            <span class="rounded-icon"><i class="icon bi bi-person-fill"></i></span> Accedi ai servizi
+        </button>
+    </div>
+
+     <!-- Jquery -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+     <!-- Splide JS -->
+    <script src="js/splide.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/custom.js"></script>
+
+    
+
+</body>
+
+</html>
