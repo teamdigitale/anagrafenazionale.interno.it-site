@@ -1,6 +1,7 @@
 .logo {
     width: 36px;
     height: 36px;
+    margin-top: 2px;
 }
 
 .navbar.fixed .logo {
@@ -55,12 +56,13 @@ header .h1 .small {
 
 @media (min-width: 992px) {
     header h1 {
-    font-size: 2.8rem;
+    font-size: 2.7rem;
     }
 
     .logo {
         width: 77px;
         height: 77px;
+        margin-top: 7px;
     }
 
     .navbar.fixed .logo {
@@ -926,8 +928,13 @@ ul.list.credits li p{
 
 /*footer*/
 
-.footer-dark a img{
-    margin-top: 3px;
+.footer-dark a.f-link{
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-dark a .h1{
+    margin-left: 20px;
 }
 
 @media screen and (max-width: 767.98px) {
@@ -938,6 +945,13 @@ ul.list.credits li p{
         display: block;
         font-size: .8rem;
         font-weight: 300;
+    }
+    .footer-dark a .h1{
+        margin-left: 8px;
+    }
+    
+    .footer-dark a .h1{
+        font-size: 1.5rem;
     }
 
     footer .logo {
@@ -951,17 +965,20 @@ ul.list.credits li p{
 
 @media screen and (min-width: 768px) {
     footer .h1 {
-        font-size: 1.99rem;
+        font-size: 1.88rem;
     }
-
+    
+    .footer-dark a img{
+        margin-top: 4px;
+    }
     
     footer .h1 small {
         font-size: 0.8em;
     }
 
     footer .logo {
-        width: 55px;
-        height: 55px;
+        width: 56px;
+        height: 56px;
     }
 }
 
@@ -1119,6 +1136,10 @@ footer small.smallFooter{
 .header-top-light a {
     font-weight: 300;
     font-size: 1rem;
+}
+
+.under-hover:hover{
+    text-decoration: underline;
 }
 
 @media (min-width: 768px) {
@@ -1375,6 +1396,10 @@ ul.link-list li a {
         font-weight: 300;
     }
     
+}
+
+.title-box.page-title p{
+    color: #5c6f82;
 }
 
 @media screen and (min-width: 1200px) {
