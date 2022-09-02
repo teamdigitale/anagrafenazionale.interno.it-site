@@ -50,6 +50,10 @@ header .h1 .small {
     }
 }
 
+.header-light a img{
+    margin-top: 4px;
+}
+
 @media (min-width: 992px) {
     header h1 {
     font-size: 2.7rem;
@@ -923,7 +927,6 @@ ul.list.credits li p{
 }
 
 /*footer*/
-
 
 .footer-dark a.f-link{
     color: #fff;
