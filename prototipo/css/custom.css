@@ -962,6 +962,10 @@ ul.list.credits li p{
     .footer-dark a .h1{
         margin-left: 8px;
     }
+
+    .footer-dark .px-custom{
+        margin-top: 40px;
+    }
     
     .footer-dark a .h1{
         font-size: 1.5rem;
