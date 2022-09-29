@@ -1,0 +1,208 @@
+#feedback_utente  legend {
+    font-size: 1.5rem!important;
+    color: #fff!important;
+padding-bottom:25px;
+padding-left:10px;
+padding-right:10px;
+}
+
+.alert-success {
+      background-position-y: top;
+background-position-x: left;
+}
+
+
+#feedback_utente .display-3 {
+font-size:0px!important;
+line-height:0rem!important;}
+
+#feedback_utente   .captcha-legend {
+font-size: 1rem!important;
+padding-bottom:10px;
+}
+
+#feedback_utente  .display-3 {
+Visibility:hidden;
+font-size: 0rem !important;
+}
+
+
+#feedback_utente .captcha-audio-button { 
+    box-sizing: border-box;
+    border-radius: 0;
+    margin: 0;
+    -webkit-appearance: button;
+    display: block;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    text-decoration: underline;
+    padding: 0;
+}
+
+
+#feedback_utente .captcha-new-button { 
+    box-sizing: border-box;
+    border-radius: 0;
+    margin: 0;
+    -webkit-appearance: button;
+    display: block;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    text-decoration: underline;
+    padding: 0;
+}
+
+ 
+
+
+#feedback_utente .captcha-audio-button:hover, # feedback_utente .captcha-new-button:hover {
+Text-decoration:none;
+}
+
+
+#feedback_utente .text-center {
+    text-align: left !important;
+     
+}
+
+#feedback_utente  i.fas.fa-sync-alt.captcha-sync-alt:before {
+    content: "\f130";
+    font-family: bootstrap-icons !important;
+color: #fff;
+}
+
+#feedback_utente  i.fas.fa-sync-alt.captcha-sync-alt:before {
+    content: "\f130";
+    font-family: bootstrap-icons !important;
+color: #fff;
+
+}
+
+
+#feedback_utente .form-control {
+-webkit-appearance: auto!important;}
+
+#feedback_utente  button:hover {
+    text-decoration: none;
+}
+
+
+#feedback_utente .custom-radio {
+/*width: 25%;*/
+float: left;
+margin-right:25px;
+}
+
+
+#feedback_utente . captcha-label {
+color:#fff;}
+
+#feedback_utente .captcha-form-group {
+flex: 0 0 100%;
+max-width: 100%;
+    margin-top: 15px;
+}
+
+#feedback_utente .anpr-bg-dark .captcha-new-button {
+    color: #fff;
+}
+
+#feedback_utente .btn-primary {
+    color: #06c;
+    background-color: #fff;
+    border-color: #fff;
+}
+
+
+#feedback_utente .btn-primary:disabled, .btn-primary.disabled {
+    color: #043E8C;
+    background-color: #AFB6C0;
+    border-color: #AFB6C0;
+}
+
+
+
+#feedback_utente .btn-primary:hover {
+    background-color: #eee!important;
+}
+
+.captcha-label {
+color:#fff;
+}
+
+.fas.fa-volume-up.captcha-vol-up::before {
+  content: "\f610";
+  font-family: bootstrap-icons !important;
+color:#fff;
+
+}
+
+ 
+.fas.fa-key.captcha-key::before {
+  content: "\f44e";
+  font-family: bootstrap-icons !important;
+ 
+
+}
+
+#feedback_utente p.alert-content {
+ padding-left: 35px;
+color:#fff!important;
+}
+
+#feedback_utente .alert-danger {
+ 
+background-position-y: top;
+background-position-x: left;
+}
+
+#feedback_utente label.custom-control-label {
+    padding-left: 4px;
+}
+
+#feedback_utente .custom-control-input {
+    width: 30px;
+    height: 30px;
+    margin-top: 0px;
+    float: left;
+    vertical-align: center!important;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border: 1px solid #939496;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-print-color-adjust: exact;
+    color-adjust: exact;
+    border-radius: 50%;
+}
+#feedback_utente .custom-control-input:active {
+    filter: brightness(90%);
+}
+#feedback_utente .custom-control-input:focus {
+    border-color: #80b3e6;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgb(0 102 204 / 25%);
+}
+#feedback_utente .custom-control-input:not(:disabled):not([readonly]) {
+    cursor: pointer;
+}
+
+#feedback_utente .custom-control-input:checked[type=radio] {
+  background-image: url(../img/circle.svg);
+  background-color: #06c;
+  border-color: #06c;
+}
+#feedback_utente .container-fluid{
+ padding: 0 !important;
+}
