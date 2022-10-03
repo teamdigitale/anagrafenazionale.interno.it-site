@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="it">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap icons -->
+    <link href="css/bootstrap-icons.css" rel="stylesheet" />
+    <!-- CSS del tema -->
+    <link href="css/italia.css" rel="stylesheet" />
+    <!-- CSS del carousel -->
+    <link href="css/splide.min.css" rel="stylesheet" />
+    <!-- CSS custom -->
+    <link href="css/custom.css" rel="stylesheet" />
+    <title>Login - Anagrafe Nazionale</title>
+    <meta name="description" content="Da valorizzare">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon.ico">
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Da valorizzare" />
+    <meta property="og:url" content="Da valorizzare" />
+    <meta property="og:description" content="Da valorizzare" />
+    <meta property="og:image" content="Da valorizzare" />
+    <meta property="og:site_name" content="Da valorizzare" />
+</head>
+
+<body class="login">
+    <a class="visually-hidden" href="#main" aria-label="link a contenuto principale">Vai al contenuto principale</a>
+    <header aria-label="Funzioni di servizio">
+        <div class="header-top-light">
+            <div class="container px-custom py-2">
+                <div class="row align-items-center gx-2 gx-md-4">
+                    <div class="col">
+                        <a href="homepage.html" class="text-white fw-semibold"><i class="icon bi bi-arrow-left me-1"></i> Torna all'Anagrafe Nazionale</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="header-light">
+            <div class="container px-custom pt-3 py-lg-4">
+                <div class="d-flex gx-2 gx-md-4">
+                    <a href="homepage.html" class="d-flex" aria-label="Homepage Anagrafe nazionale">
+                        <img src="img/logo-anpr-bianco.svg" alt="Logo Anagrafe Nazionale" class="logo me-2 me-lg-4" />
+                        <h1>Anagrafe Nazionale<small>Unica. <span class="fw-semibold">Per tutti.</span></small></h1>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+
+    <main id="main">
+        <section id="login-form" class="section">
+            <section class="container">
+                <div class="row">
+                    <div class="col-12 offset-lg-1 col-lg-10 offset-xl-2 col-xl-8">
+                        <div class="login-form">
+                            <ul class="nav nav-tabs-borderless" role="tablist">
+                                <li class="nav-item">
+                                    <a href="#tab-spid" class="nav-link active" data-bs-toggle="tab" aria-controls="tab-spid" aria-expanded="true" role="tab">SPID</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#tab-cie" class="nav-link" data-bs-toggle="tab" aria-controls="tab-cie" aria-expanded="true" role="tab">CIE</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#tab-cns" class="nav-link" data-bs-toggle="tab" aria-controls="tab-cns" aria-expanded="true" role="tab">CNS</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content">
+                                <div id="tab-spid" class="tab-pane fade active show" role="tabpanel">
+                                    <p>
+                                    SPID, il <strong>Sistema Pubblico di Identità Digitale</strong>, è il sistema di accesso che consente di
+                                    utilizzare, con un'identità digitale unica, i servizi online della Pubblica Amministrazione
+                                    e dei privati accreditati.
+                                    Se sei già in possesso di un'identità digitale, accedi con le credenziali del tuo gestore.
+                                    Se non hai ancora un'identità digitale, richiedila ad uno dei gestori.
+                                    </p>
+                                    <div class="row">
+                                        <div class="col-12 col-md-6">
+                                            <ul class="list-link list-unstyled">
+                                            <li class="mb-1"><a href="https://www.spid.gov.it" target="_blank">Maggiori informazioni su SPID<span class="visually-hidden">: apre una nuova finestra</span></a></li>
+                                            <li class="mb-1"><a href="https://www.spid.gov.it/richiedi-spid" target="_blank">Non hai SPID?<span class="visually-hidden">: apre una nuova finestra</span></a></li>
+                                            <li class="mb-1"><a href="https://www.spid.gov.it/serve-aiuto" target="_blank">Serve aiuto?<span class="visually-hidden">: apre una nuova finestra</span></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <div class="dropdown d-flex justify-content-center justify-content-md-end align-items-center w-100">
+                                                <button type="button" id="spid-dropdown" class="btn-spid btn btn-primary btn-lg dropdown-toggle d-flex align-items-center" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <div class="border-end border-white pe-3 me-3">
+                                                        <span class="rounded-icon"><i class="icon bi bi-person-fill"></i></span>
+                                                    </div>
+                                                    Entra con SPID
+                                                </button>
+                                                <ul class="dropdown-menu spid-idp-button-menu" aria-labelledby="spid-dropdown">
+                                                    <li>
+                                                        <a class="dropdown-item" href="#">
+                                                            <span class="visually-hidden">Namirial ID</span><img src="img/spid-idp-namirialid.svg" alt="Namirial ID">
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="#">
+                                                            <span class="visually-hidden">Aruba ID</span><img src="img/spid-idp-arubaid.png" alt="Aruba ID">
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="#">
+                                                            <span class="visually-hidden">Poste ID</span><img src="img/spid-idp-posteid.svg" alt="Poste ID">
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="#">
+                                                            <span class="visually-hidden">Titt ID</span><img src="img/spid-idp-timid.png" alt="Titt ID">
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="#">
+                                                            <span class="visually-hidden">Intesa ID</span><img src="img/spid-idp-intesaid.svg" alt="Intesa ID">
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="#">
+                                                            <span class="visually-hidden">Lepida ID</span><img src="img/spid-idp-lepidaid.svg" alt="Lepida ID">
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="#">
+                                                            <span class="visually-hidden">Infocert ID</span><img src="img/spid-idp-infocertid.svg" alt="Infocert ID">
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="#">
+                                                            <span class="visually-hidden">SPIDItalia Register.it</span><img src="img/spid-idp-spiditalia.svg" alt="SpidItalia">
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="#">
+                                                            <span class="visually-hidden">Sielte ID</span><img src="img/spid-idp-sielteid.svg" alt="Sielte ID">
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="#" target="_blank">
+                                                            Maggiori informazioni<span class="visually-hidden">: apre una nuova finestra</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="#" target="_blank">
+                                                            Non hai SPID?<span class="visually-hidden">: apre una nuova finestra</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="#" target="_blank">
+                                                            Serve aiuto?<span class="visually-hidden">: apre una nuova finestra</span>
+                                                        </a>
+                                                    </li>
+
+                                                </ul>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="row mt-4">
+                                        <div class="col-12 offset-lg-3 col-lg-6 text-center">
+                                            <img id="spid-agid" class="img-fluid img-spid" src="img/spid-agid-logo-lb.png" alt="logo Spid-Agid">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="tab-cie" class="tab-pane fade" role="tabpanel">
+                                    <form action="#" method="post" novalidate="">
+                                        <p>
+                                            La <strong>Carta di Identità Elettronica (CIE)</strong> è il documento personale che attesta l'identità del cittadino.<br>
+                                            Dotata di microprocessore, oltre a comprovare l'identità personale, permette l'accesso ai servizi digitali della Pubblica Amministrazione.
+                                        </p>
+                                        <div class="mt-5 row">
+                                            <div class="d-flex col-12 col-sm-6">
+                                                <ul class="list-link list-unstyled">
+                                                    <li class="mb-1"><a href="https://www.cartaidentita.interno.gov.it/" target="_blank">Maggiori informazioni <span class="visually-hidden"> per CIE</span><span class="visually-hidden">: apre una nuova finestra</span></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-center justify-content-lg-end col-12 col-sm-6">
+                                                <a href="#" id="btn-cie" class="btn-cie btn btn-primary btn-lg d-flex align-items-center">
+                                                    <div class="border-end border-white pe-3 me-3">
+                                                        <img class="img-fluid" src="img/ico-cie_id.png" alt="Entra con CIE"> 
+                                                    </div>
+                                                    Entra con CIE
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div id="tab-cns" class="tab-pane fade" role="tabpanel">
+                                    <form action="#" method="post" novalidate="">
+                                        <p>
+                                            L'accesso è consentito con la <strong>Tessera Sanitaria (TS)</strong> e la <strong>Carta Nazionale dei Servizi (CNS)</strong>.<br>
+                                            La TS e la CNS sono smart card che contengono un "certificato digitale" di autenticazione personale, utile per accedere ai servizi online della Pubblica Amministrazione.
+                                        </p>
+                                        <div class="row mt-5">
+                                            <div class="d-flex col-12 col-sm-6">
+                                                <ul class="list-link list-unstyled">
+                                                    <li class="mb-1"><a href="https://www.sistemats.it/" target="_blank">Maggiori informazioni <span class="visually-hidden"> per CNS</span><span class="visually-hidden">: apre una nuova finestra</span></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-center justify-content-lg-end col-12 col-sm-6">
+                                                <a href="#" id="btn-cie" class="btn-cns btn btn-primary btn-lg d-flex align-items-center">
+                                                    <div class="border-end border-white pe-3 me-3">
+                                                        <i class="bi bi-box-arrow-in-right"></i>
+                                                    </div>
+                                                    Entra con CNS
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+    </main>
+    
+    
+    
+    <!-- Jquery -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/fonts.js"></script>
+
+    
+
+</body>
+
+</html>
