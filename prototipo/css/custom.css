@@ -26,6 +26,7 @@ header h1 {
     font-size: 1.25rem;
     line-height: .8;
     padding-left: .5rem;
+    margin-bottom: .2rem;
 }
 
 header h1 small,
@@ -43,6 +44,7 @@ header .h1 .small {
         font-size: 2.25rem;
         padding-left: 1.87rem;
         border-left: 0.7px solid #06c;
+        margin: 0;
     }
 
     header h1 small,
@@ -415,10 +417,11 @@ header .header-top-light+.header-light {
 }
 
 @media (min-width: 992px) {
-    .navbar.navbar-light .navbar-nav .nav-link.question {
+    /*.navbar.navbar-light .navbar-nav .nav-link.question {
         padding-right: 0;
-    }
-    .navbar.navbar-light.fixed .navbar-nav .nav-link.question {
+    }*/
+    .navbar.navbar-light.fixed .navbar-nav .nav-link.question,
+    .navbar.navbar-light .navbar-nav .nav-link.question.active {
         padding-right: 24px;
     }
 }
@@ -508,7 +511,7 @@ header .header-top-light+.header-light {
 
 header .header-light .navbar-toggler {
     margin-left: -5px;
-    margin-right: .5rem !important;
+    margin-right: .2rem !important;
 }
 
 
@@ -1363,6 +1366,7 @@ ul.link-list li a {
     width: 100%;
     justify-content: center;
     font-size: .875rem;
+    font-weight: 700;
 }
 
 .access-sticky {
@@ -2208,12 +2212,13 @@ body.login header .header-light {
 }
 
 body.login .header-top-light a {
-    font-size: .875rem;
+    font-size: 1rem;
+    text-decoration: underline;
 }
 
 body.login header .header-light {
     border-bottom: none;
-    border-top: 0.5px solid #fff;
+    border-top: 1px solid rgba(255,255,255,.25);
 }
 
 body.login header .header-light .logo {
