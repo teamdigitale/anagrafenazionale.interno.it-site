@@ -1,0 +1,503 @@
+<!doctype html>
+<html lang="it">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap icons -->
+    <link href="css/bootstrap-icons.css" rel="stylesheet" />
+    <!-- CSS del tema -->
+    <link href="css/italia.css" rel="stylesheet" />
+    <!-- CSS del carousel -->
+    <link href="css/splide.min.css" rel="stylesheet" />
+    <!-- CSS custom -->
+    <link href="css/custom.css" rel="stylesheet" />
+    <title>Minisito - Anagrafe Nazionale</title>
+    <meta name="description" content="Da valorizzare">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon.ico">
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Da valorizzare" />
+    <meta property="og:url" content="Da valorizzare" />
+    <meta property="og:description" content="Da valorizzare" />
+    <meta property="og:image" content="Da valorizzare" />
+    <meta property="og:site_name" content="Da valorizzare" />
+</head>
+
+<body class="minisito">
+    <a class="visually-hidden" href="#main" aria-label="link a contenuto principale">Vai al contenuto principale</a>
+    <header aria-label="Funzioni di servizio">
+        <div class="header-top-light">
+            <div class="container px-custom py-2">
+                <div class="row align-items-center gx-2 gx-md-4">
+                    <div class="col">
+                        <a href="https://www.interno.gov.it/it" target="_blank"
+                            class="link-primary link-istituzione">Ministero dell'Interno<span class="visually-hidden">: apre una nuova finestra</span></a>
+                    </div>
+                    <div class="col col-md-auto d-flex align-items-center justify-content-end">
+                        <div class="dropdown">
+                            <button type="button" id="lingue-disponibili"
+                                class="btn btn-sm link-primary dropdown-toggle" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <span class="visually-hidden">Lingue disponibili:</span>DEU
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="lingue-disponibili">
+                                <li>
+                                    <a class="dropdown-item" href="#" lang="de">ITA<span class="visually-hidden">:
+                                            italiano</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#" lang="en">ENG<span class="visually-hidden">:
+                                            english</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#" lang="sl">SLO<span class="visually-hidden">:
+                                            slovenian</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="login.html" class="btn btn-primary btn-sm access ms-3">
+                            <span class="rounded-icon d-none d-md-flex"><i class="icon bi bi-person-fill"></i></span>
+                            Accedi <span class="d-none d-md-inline ms-1">ai servizi</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-light">
+            <div class="container px-custom pt-3 py-lg-4">
+                <div class="d-flex gx-2 gx-md-4">
+                    <a href="minisito.html" class="d-flex align-items-center" aria-label="Homepage Anagrafe nazionale">
+                        <img src="img/logo-anpr.svg" alt="Logo Anagrafe Nazionale" class="logo me-2 me-lg-4" />
+                        <h1>Anagrafe Nazionale<small>Unica. <span class="fw-semibold">Per tutti.</span></small></h1>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav class="main-nav" aria-label="Menu principale">
+        
+        <div class="navbar navbar-expand-lg navbar-light">
+            <div class="container px-custom">
+                <div class="d-flex align-items-center w-100">
+                    <a href="homepage.html" class="d-flex" aria-label="Homepage Anagrafe nazionale"><img src="img/logo-anpr-bianco.svg" alt="Logo Anagrafe Nazionale" class="logo logo-sticky me-2"/>
+                        <div class="head-title-mobile under-hover">Anagrafe Nazionale<small>Unica. <span class="fw-semibold">Per tutti.</span></small></div>
+                    </a>
+                    <div class="navbar-collapse collapse" id="navbar-menu">
+                        <div class="menu-wrapper d-flex flex-column flex-lg-row px-3 px-lg-0">
+                            <!--<ul class="navbar-nav ms-lg-auto">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link question" href="domande-frequenti.html">
+                                        <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                            viewBox="0 0 80 80">
+                                            <path id="Icon_material-question-answer"
+                                                data-name="Icon material-question-answer"
+                                                d="M79,19H71V55H19v8a4.012,4.012,0,0,0,4,4H67L83,83V23A4.012,4.012,0,0,0,79,19ZM63,43V7a4.012,4.012,0,0,0-4-4H7A4.012,4.012,0,0,0,3,7V63L19,47H59A4.012,4.012,0,0,0,63,43Z"
+                                                transform="translate(-3 -3)" />
+                                        </svg>Domande frequenti
+                                    </a>
+                                </li>
+                            </ul>-->
+                            <div class="access-container ms-lg-auto">
+                                <a href="login.html" class="btn btn-primary access ms-lg-3">
+                                    <span class="rounded-icon"><i class="icon bi bi-person-fill"></i></span> ACCEDI AI
+                                    SERVIZI
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main">
+
+        <div class="hero-wrapper anpr-bg-primary flex-column bg-overlay">
+            <h2 class="visually-hidden">In evidenza</h2>
+            <section class="w-100">
+                <div class="img-responsive-wrapper position-inherit">
+                    <div class="img-responsive">
+                        <div class="img-wrapper"></div>
+                    </div>
+                </div>
+                <!-- - texts-->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="hero-text-wrapper bg-dark">
+                                <h2>Das Nationale Register ist die einzige Datenbank, die demografische Dienste vereinfacht. Dokumente und Daten für jedermann verfügbar.</h2>
+                                <!--<div class="btn-container letter-spacing-1"><a class="btn btn-link" href="#">Conosci l'anagrafe <i class="icon bi bi-arrow-right ms-2"></i></a></div>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <section class="section pt-5 anpr-bg-primary">
+            <div class="container px-custom">
+
+                <div class="row">
+                    <div class="col-12 offset-lg-3 col-lg-6">
+                        <div class="title-box section-title page-title d-flex flex-column align-items-center align-items-md-start justify-content-center justify-content-md-start mb-5">
+
+                            <div class="d-flex align-items-center align-items-md-start w-100 mb-3 mb-md-0">
+                                <img class="icon icon-heading" src="img/ico-servizi_anagrafici-white.svg" alt="Bürgeramt">
+                                <h2 class="text-white mb-0 mb-md-3">Bürgeramt</h2>
+                            </div>
+
+                            <div class="text-box d-flex flex-column">
+                                <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <a class="text-uppercase text-decoration-none fw-bold letter-spacing-1 link-white" href="#">VAI A TUTTI I SERVIZI ANAGRAFICI <i class="icon bi bi-arrow-right ms-2"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!--<div class="row">
+                    <div class="col-12 offset-lg-3 col-lg-6">
+                        <div class="title-box page-title d-flex flex-column align-items-center align-items-md-start justify-content-center justify-content-md-start mb-4">
+
+                            <div class="d-flex align-items-center align-items-md-start w-100 mb-3 mb-md-0">
+                                <img class="icon icon-heading" src="img/ico-servizi_anagrafici-white.svg" alt="">
+                                <h2 class="text-white mb-0 mb-md-3 m-8">Bürgeramt</h2>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>-->
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h3 class="card-title">Suche und Selbstzertifizierungen</h3>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h3 class="card-title">Zertifikate</h3>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h3 class="card-title">Datenkorrektur</h3>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h3 class="card-title">Residenz</h3>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h3 class="card-title">Domicilio digitale</h3>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--<div class="colcol mt-5 mt-md-4">
+                        <div class="card card-link align-items-center justify-content-center h-100">
+                            <a class="text-uppercase text-white text-decoration-none" href="#">
+                                ACCEDI AI SERVIZI ANAGRAFICI <i class="icon bi bi-arrow-right ms-2"></i>
+                            </a>
+                        </div>
+                    </div>-->
+                </div>
+            </div>
+        </section>
+
+        <!--<section class="section d-none d-md-block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 offset-md-1 col-md-10">
+                        <div class="card mt-5">
+                            <div class="card-body d-flex flex-column flex-md-row align-items-center">
+                                <h3 class="card-title">Accedi ai servizi anagrafici per richiedere un certificato.</h3>
+                                <a class="btn btn-primary mt-3 mt-md-0 ms-md-auto">
+                                    <span class="rounded-icon"><i class="icon bi bi-person-fill"></i></span>
+                                    ACCEDI AI SERVIZI
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>-->
+
+        <section class="section section-bottom-lg section-banner">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="offset-1 col-10 offset-md-2 col-md-8 offset-lg-3 col-lg-6">
+                        <div class="d-flex align-items-start">
+                            <img class="icon icon-heading" src="img/ico-faq.svg" alt="">
+                            <div class="title-box page-title">
+                                <h3>Vuoi saperne di più?</h3>
+                                <a class="text-uppercase letter-spacing-1" href="domande-frequenti.html">Leggi tuttele domande frequenti <i class="icon bi bi-arrow-right ms-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 offset-md-1 col-md-10">
+                        <div class="accordion" id="accordion-example-chips">
+                            <div class="accordion-item">
+                                <h4 class="accordion-header" id="accordion-example-chips-heading-1">
+                                    <button class="accordion-button accordion-button-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-example-chips-collapse-1" aria-controls="accordion-example-chips-collapse-1">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tristique
+                                        nisi ultricies velit tristique auctor
+                                    </button>
+                                </h4>
+                                <div id="accordion-example-chips-collapse-1" class="accordion-collapse collapse" aria-labelledby="accordion-example-chips-heading-1">
+                                    <div class="accordion-body">
+                                        Etiam id ornare augue. Sed efficitur consectetur dictum. Phasellus vitae
+                                        lectus eleifend, pulvinar eros id, placerat lectus. Donec in dignissim
+                                        mauris.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h4 class="accordion-header" id="accordion-example-chips-heading-2">
+                                    <button class="accordion-button accordion-button-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-example-chips-collapse-2" aria-controls="accordion-example-chips-collapse-2">
+                                        Titolo accordion
+                                    </button>
+                                </h4>
+                                <div id="accordion-example-chips-collapse-2" class="accordion-collapse collapse" aria-labelledby="accordion-example-chips-heading-2">
+                                    <div class="accordion-body">Contenuto accordion</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h4 class="accordion-header" id="accordion-example-chips-heading-3">
+                                    <button class="accordion-button accordion-button-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-example-chips-collapse-3" aria-controls="accordion-example-chips-collapse-3">
+                                        Titolo accordion
+                                    </button>
+                                </h4>
+                                <div id="accordion-example-chips-collapse-3" class="accordion-collapse collapse" aria-labelledby="accordion-example-chips-heading-3">
+                                    <div class="accordion-body">Contenuto accordion</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+
+        
+
+        
+    </main>
+    <footer>
+        <h2 class="visually-hidden">Mappa del sito Anagrafe Nazionale</h2>
+        
+        <div class="footer-small">
+            <h3 class="visually-hidden">Altri link del sito</h3>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <ul class="list-inline d-inline-block my-4">
+
+                            <li class="list-inline-item d-block d-md-inline-block">
+                                <a href="#" class="link-white">Erklärung zur Barrierefreiheit  
+                                <span class="visually-hidden">: apre una nuova finestra</span>
+                                <i class="icon bi bi-box-arrow-up-right ms-2"></i></a>
+                            </li>
+                            <li class="list-inline-item d-block d-md-inline-block">
+                                <a href="crediti.html" class="link-white">Rechtliche Hinweise</a>
+                            </li>
+                            <li class="list-inline-item d-block d-md-inline-block">
+                                <a href="#" class="link-white">Privatsphäre</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <button type="button" id="scroll-top-btn" class="back-to-top shadow" title="Torna all'inizio" aria-hidden="true">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+    <div class="access-sticky">
+        <a href="login.html" class="btn btn-primary access">
+            <span class="rounded-icon"><i class="icon bi bi-person-fill"></i></span> Accedi ai servizi
+        </a>
+    </div>
+
+    <!-- Jquery -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- Splide JS -->
+    <script src="js/splide.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/custom.js"></script>
+
+    <script>
+        /*hero*/
+        new Splide('#main-carousel', {
+            //type: 'loop',
+            perPage: 1,
+            arrows: true,
+            pagination: true,
+            //padding: '1em',
+            //gap: '2em',
+            mediaQuery: 'min',
+            /*breakpoints: {
+              992: {
+                perPage: 2,
+              },
+              1200: {
+                perPage: 3,
+              },
+            },*/
+            i18n: {
+                slideLabel: '%s di %s',
+                select: 'Seleziona la slide da mostrare',
+                prev: 'Slide precedente',
+                next: 'Slide successiva',
+                pageX: 'Vai alla pagina %s',
+                slideX: 'Vai alla slide %s',
+                first: 'Vai alla prima slide',
+                last: 'Vai all\'ultima slide'
+            }
+        }).mount();
+        /*news*/
+        new Splide('#news-carousel', {
+            //type: 'loop',
+            perPage: 1,
+            arrows: true,
+            pagination: true,
+            padding: { left: 34, right: 34 },
+            //gap: '2em',
+            mediaQuery: 'min',
+            breakpoints: {
+                768: {
+                    perPage: 2
+                },
+                992: {
+                    destroy: true,
+                }
+            },
+            i18n: {
+                slideLabel: '%s di %s',
+                select: 'Seleziona la slide da mostrare',
+                prev: 'Slide precedente',
+                next: 'Slide successiva',
+                pageX: 'Vai alla pagina %s',
+                slideX: 'Vai alla slide %s',
+                first: 'Vai alla prima slide',
+                last: 'Vai all\'ultima slide'
+            }
+        }).mount();
+
+        /*perchè l'anagrafe*/
+        new Splide('#anagrafe-carousel', {
+            //type: 'loop',
+            perPage: 1,
+            arrows: true,
+            pagination: true,
+            padding: { left: 34, right: 34 },
+            //gap: '2em',
+            mediaQuery: 'min',
+            breakpoints: {
+                768: {
+                    perPage: 2
+                },
+                992: {
+                    destroy: true,
+                }
+            },
+            i18n: {
+                slideLabel: '%s di %s',
+                select: 'Seleziona la slide da mostrare',
+                prev: 'Slide precedente',
+                next: 'Slide successiva',
+                pageX: 'Vai alla pagina %s',
+                slideX: 'Vai alla slide %s',
+                first: 'Vai alla prima slide',
+                last: 'Vai all\'ultima slide'
+            }
+        }).mount();
+
+        /*numeri l'anagrafe*/
+        new Splide('#number-carousel', {
+            //type: 'loop',
+            perPage: 1,
+            arrows: true,
+            pagination: true,
+            padding: { left: 34, right: 34 },
+            //gap: '2em',
+            mediaQuery: 'min',
+            breakpoints: {
+                768: {
+                    perPage: 2
+                },
+                992: {
+                    destroy: true,
+                }
+            },
+            i18n: {
+                slideLabel: '%s di %s',
+                select: 'Seleziona la slide da mostrare',
+                prev: 'Slide precedente',
+                next: 'Slide successiva',
+                pageX: 'Vai alla pagina %s',
+                slideX: 'Vai alla slide %s',
+                first: 'Vai alla prima slide',
+                last: 'Vai all\'ultima slide'
+            }
+        }).mount();
+
+        /*area tecnica l'anagrafe*/
+        new Splide('#area_tecnica-carousel', {
+            //type: 'loop',
+            perPage: 1,
+            arrows: true,
+            pagination: true,
+            padding: { left: 34, right: 34 },
+            //gap: '2em',
+            mediaQuery: 'min',
+            breakpoints: {
+                768: {
+                    perPage: 2
+                },
+                992: {
+                    destroy: true,
+                }
+            },
+            i18n: {
+                slideLabel: '%s di %s',
+                select: 'Seleziona la slide da mostrare',
+                prev: 'Slide precedente',
+                next: 'Slide successiva',
+                pageX: 'Vai alla pagina %s',
+                slideX: 'Vai alla slide %s',
+                first: 'Vai alla prima slide',
+                last: 'Vai all\'ultima slide'
+            }
+        }).mount();
+
+    </script>
+
+</body>
+
+</html>
