@@ -1,7 +1,7 @@
 ---
 name: "[SDG] Nome pagina/Nome step: breve descrizione del problema"
 about: Template issue ANPR/SDG
-title: ''
+title: "[SDG]"
 labels: ''
 assignees: ''
 
