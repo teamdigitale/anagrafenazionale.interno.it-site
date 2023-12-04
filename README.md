@@ -20,8 +20,8 @@ Inoltre, non inserire nessun dato relativo a configurazioni di sicurezza, quali 
 | Liste elettorali |  [LINK](https://dpval3.anpr.interno.it:35443/cns)  |  16-11-2024  | 🟢 attivo |
 | Modulo feedback |  [LINK](https://valwp6.anpr.interno.it/faq-eng/)  |  02-11-2024  | 🟢 attivo | 
 | Servizio eIDAS - login | [LINK](https://valwp6.anpr.interno.it/servizi-al-cittadino/) | 01-12-2023 | 🟢 attivo |
-| Servizio eIDAS - scheda servizio | [LINK]([https://valwp6.anpr.interno.it/servizi-al-cittadino/](https://valwp6.anpr.interno.it/servizi-anagrafici/servizi-per-cittadini-europei/)) | 01-12-2023 | 🟢 attivo |
-| Servizio eIDAS - home EN | [LINK]([https://valwp6.anpr.interno.it/servizi-al-cittadino/](https://valwp6.anpr.interno.it/home-eng/)) | 01-12-2023 | 🟢 attivo |
+| Servizio eIDAS - scheda servizio | [LINK](https://valwp6.anpr.interno.it/servizi-anagrafici/servizi-per-cittadini-europei/) | 01-12-2023 | 🟢 attivo |
+| Servizio eIDAS - home EN | [LINK](https://valwp6.anpr.interno.it/home-eng/) | 01-12-2023 | 🟢 attivo |
 
 **Area privata**
 | **Nome**                  | **URL**                       | **Data rilascio**                       | **Stato**  |
