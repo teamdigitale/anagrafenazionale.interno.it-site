@@ -1,20 +1,23 @@
 ---
 name: "[ANPR] Nome pagina/Nome step: breve descrizione del problema"
 about: Template issue ANPR
-title: "[SDG]"
+title: "[ANPR]"
 labels: ''
 assignees: ''
 
 ---
 
-[ID test]
+*Pagina/Flusso/Servizio*
+*Priorità risoluzione* 
 
-Descrizione specifica del problema e di come ricrearlo da zero
+*Tipologia Browser*
+*Versione browser*
+*Descrizione specifica del problema e di come ricrearlo da zero*
+
 
 Immagine (copia incolla o drag and drop dell'immagine/video)
 
-eventuale link
-
+link
 [ ] checklist
 
 Ricordarsi di inserire @assignee
