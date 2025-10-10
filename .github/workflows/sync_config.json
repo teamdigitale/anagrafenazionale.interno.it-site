@@ -1,0 +1,22 @@
+{
+    "log_level": "info",
+    "ado": {
+        "wit": "Bug",
+        "bypassRules": false,
+        "autoCreate": true,
+        "states": {
+            "new": "New",
+            "closed": "Closed",
+            "reopened": "New",
+            "deleted": "Removed",
+            "active": "Active"
+        }
+    },
+    "github": {
+        "filters": {
+            "title": [
+                "[WEBAPP]:"
+            ]
+        }
+    }
+}

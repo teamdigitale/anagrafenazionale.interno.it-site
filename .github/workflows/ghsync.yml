@@ -1,0 +1,35 @@
+name: Issue ADO sync
+
+on:
+  workflow_dispatch:
+    inputs:
+      logLevel:
+        description: 'Log level'
+        required: true
+        default: 'info'
+        type: choice
+        options:
+        - info
+        - warning
+        - debug  
+  schedule:
+    # 3 allineamenti giornalieri da ADO->GH
+    - cron: '30 9,13,18 * * *'
+  issues:
+    types: [opened, closed, deleted, reopened, edited, labeled, unlabeled, assigned, unassigned]
+  issue_comment:
+    types: [created]
+
+jobs:
+  alert:
+    runs-on: ubuntu-latest
+    name: Sync workflow
+    steps:       
+    - uses: actions/checkout@v3
+    - uses: maxill1/GitSync@feature/main
+      env:     
+        ado_token: '${{ secrets.ADO_PERSONAL_ACCESS_TOKEN }}'
+        github_token: '${{ secrets.GH_PERSONAL_ACCESS_TOKEN }}'
+        config_file: './.github/workflows/sync_config.json'
+      with:
+        ado: ${{ secrets.ADO_CONFIG }}
