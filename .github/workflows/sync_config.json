@@ -14,11 +14,8 @@
     },
     "github": {
         "filters": {
-            "labels": [
-                "bug"
-            ],
             "title": [
-                "[ANPRWEB]:"
+                "[WEBAPP]:"
             ]
         }
     }

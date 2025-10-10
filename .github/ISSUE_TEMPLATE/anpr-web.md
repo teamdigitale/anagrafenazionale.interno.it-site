@@ -1,7 +1,7 @@
 ---
-name: "[ANPRWEB] Nome pagina/Nome step: breve descrizione del problema"
-about: Template issue ANPRWEB
-title: "[ANPRWEB]"
+name: "[WEBAPP] Nome pagina/Nome step: breve descrizione del problema"
+about: Template issue WEBAPP
+title: "[WEBAPP]"
 labels: ''
 assignees: ''
 
