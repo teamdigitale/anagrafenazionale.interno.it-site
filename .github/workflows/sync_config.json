@@ -14,8 +14,11 @@
     },
     "github": {
         "filters": {
+            "labels": [
+                "webapp"
+            ],
             "title": [
-                "[WEBAPP]:"
+                "[WEBAPP]"
             ]
         }
     }
