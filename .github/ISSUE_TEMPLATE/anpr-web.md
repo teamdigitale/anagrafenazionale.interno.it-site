@@ -2,7 +2,7 @@
 name: "[WEBAPP] Nome pagina/Nome step: breve descrizione del problema"
 about: Template issue WEBAPP
 title: "[WEBAPP]"
-labels: ''
+labels: 'webapp'
 assignees: ''
 
 ---
